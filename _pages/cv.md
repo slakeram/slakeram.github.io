@@ -2,7 +2,7 @@
 layout: single
 title: "Curriculum Vitae"
 permalink: /cv/
-author_profile: true
+author_profile: false
 ---
 
 # Scott Lakeram, Ph.D.
