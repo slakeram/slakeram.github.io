@@ -42,3 +42,25 @@ body {background:var(--cream); color:var(--ink);}
 .publication-list li {padding:.65rem .85rem;margin-bottom:.9rem!important;border-left:3px solid #88ad8a;background:#f0f5eb;border-radius:0 5px 5px 0;}
 .publication-list li:nth-child(even) {background:#f8f0df;border-left-color:var(--ochre);}
 @media(max-width:600px){.botanical-hero{padding:2rem 1.3rem}.botanical-grid{grid-template-columns:1fr}.sidebar{padding:.6rem}}
+
+/* Solid botanical navigation bar, with no site-title label */
+.masthead,
+.masthead__inner-wrap,
+.masthead__menu,
+.greedy-nav,
+.greedy-nav .visible-links,
+.greedy-nav .hidden-links {
+  background-color:#dce9d8 !important;
+}
+.masthead {border-bottom:3px solid #477f60;}
+.greedy-nav .site-title,
+.greedy-nav .site-title a,
+.masthead__menu-item--lg {display:none !important;}
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links a {background:transparent !important;color:#153b30 !important;}
+.greedy-nav .visible-links a:hover,
+.greedy-nav .hidden-links a:hover {background:#c5ddc6 !important;color:#153b30 !important;}
+.greedy-nav .greedy-nav__toggle,
+.greedy-nav button {background:#dce9d8 !important;color:#153b30 !important;}
+.greedy-nav .greedy-nav__toggle:hover,
+.greedy-nav button:hover {background:#c5ddc6 !important;}
