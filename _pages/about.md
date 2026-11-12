@@ -48,11 +48,17 @@ redirect_from:
   </div>
 </div>
 
+<section class="botanical-content-panel" markdown="1">
+
 ## About
 
 Plant–arthropod interactions influence herbivory, decomposition, and the organization of terrestrial food webs, yet how these relationships evolved remains poorly understood. My research examines how these interactions shaped organic-matter processing in peat-forming ecosystems and responded to environmental change through deep time.
 
 I combine fossil evidence with modern ecological systems, comparative morphology, microscopy-based imaging, and ecological network modeling to investigate the processes that shaped ancient terrestrial communities.
+
+</section>
+
+<section class="botanical-content-panel" markdown="1">
 
 ## Research themes
 
@@ -62,12 +68,23 @@ I combine fossil evidence with modern ecological systems, comparative morphology
   <a class="botanical-card" href="/research/#change"><span>03 · ENVIRONMENTAL CHANGE</span><h3>Ecological restructuring across deep time</h3><p>How did disturbance and floral turnover reshape terrestrial food webs?</p></a>
 </div>
 
+</section>
+
+<section class="botanical-content-panel" markdown="1">
+
 ## Research and teaching
 
 My work connects Pennsylvanian coal ball assemblages with living wetlands, including mangrove forests in the Florida Keys and South Florida wetlands. In teaching, I emphasize active inquiry, field observations, evidence-based reasoning, and student-centered mentorship.
 
 [Read about my teaching →](/teaching/) · [Browse publications →](/publications/)
 
+</section>
+
+<section class="botanical-content-panel" markdown="1">
+
 ## Academic profiles and CV
 
 [**Curriculum vitae →**](/cv/) · [**Google Scholar →**](https://scholar.google.com/citations?user=Y9aaMxQAAAAJ&hl=en) · [**Email →**](mailto:lakerams@si.edu)
+
+</section>
+
