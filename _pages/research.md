@@ -7,6 +7,14 @@ author_profile: false
 
 <div class="botanical-intro"><p class="botanical-eyebrow">RESEARCH PROGRAM</p><h1>Plant–arthropod interactions and the evolution of terrestrial ecosystems</h1><p>Combining fossil evidence and modern ecological comparisons to understand herbivory, decomposition, food web structure, and environmental change across deep time.</p></div>
 
+## Fossil evidence: coprolites and coal balls
+
+**Coprolites** are fossilized fecal material that provide direct evidence of feeding and digestive processes in ancient organisms. Their size, shape, composition, and preserved inclusions can reveal what an animal consumed and how food was processed. In terrestrial fossil assemblages, coprolites are particularly valuable because they preserve traces of interactions involving small arthropods whose bodies are rarely fossilized. When examined alongside plant tissues and other feeding traces, they can help reconstruct herbivory, detritivory, resource use, and the organization of ancient food webs.
+
+**Coal balls** are carbonate-rich concretions that formed within ancient peat deposits and can preserve plant remains in exceptional anatomical detail. Despite their name, they are not made of coal; rather, mineral precipitation within peat preserved roots, stems, leaves, reproductive structures, and sometimes associated arthropod traces before the surrounding material was compressed into coal. Coal balls are especially important for studying Pennsylvanian peat forests because thin sections and cellulose acetate peels reveal microscopic tissues and ecological associations that are seldom visible in ordinary compression fossils. They provide a rare record of the plants and biological interactions that structured ancient wetland ecosystems.
+
+---
+
 <a id="decomposition"></a>
 ## 01 · Plant–arthropod interactions and decomposition
 
