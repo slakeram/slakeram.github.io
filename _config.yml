@@ -24,36 +24,36 @@ repository               : "slakeram/slakeram.github.io"
 author:
   # Biographic information
   avatar           :
-  name             : "Scott Lakeram, Ph.D."
+  name             :
   pronouns         : # example: "she/her"  
-  bio              : "Paleobotany, paleoecology, and plant–arthropod interactions"
+  bio              :
   location         :
-  employer         : "Smithsonian National Museum of Natural History"
-  uri              : # URL
+  employer         :
+  uri              :
   email            : "lakerams@si.edu"
 
   # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
+  academia         :
+  arxiv            :
   googlescholar    : "https://scholar.google.com/citations?user=Y9aaMxQAAAAJ&hl=en"
-  inspire-hep      : # URL
-  impactstory      : # URL
+  inspire-hep      :
+  impactstory      :
   orcid            :
-  semantic         : # URL
-  ssrn             : # URL
+  semantic         :
+  ssrn             :
   pubmed           :
-  researchgate     : # URL
-  scopus           : # URL
-  zotero           : # URL
+  researchgate     :
+  scopus           :
+  zotero           :
 
 
   # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
+  bitbucket        :
+  codepen          :
+  dribbble         :
   github           :
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  kaggle           :
+  stackoverflow    :
 
   # Social media
   artstation       :
