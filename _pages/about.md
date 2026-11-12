@@ -39,6 +39,4 @@ My work connects Pennsylvanian coal ball assemblages with living wetlands, inclu
 
 ## Academic profiles and CV
 
-[**Curriculum vitae →**](/cv/) · [**ORCID →**](https://orcid.org/) · [**Google Scholar →**](https://scholar.google.com/)
-
-*ORCID and Google Scholar links above lead to the service homepages until verified personal profile URLs are supplied.*
+[**Curriculum vitae →**](/cv/) · [**Google Scholar →**](https://scholar.google.com/citations?user=Y9aaMxQAAAAJ&hl=en) · [**Email →**](mailto:lakerams@si.edu)
