@@ -1,36 +1,26 @@
 ---
-layout: archive
+layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+Research outputs on arthropod feeding traces, coal ball paleobotany, and terrestrial ecosystems. Manuscripts are identified by their current status rather than presented as published work.
 
-{% include base_path %}
+## Peer-reviewed publications
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+**Lakeram, S. R., Donovan, M., Labandeira, C. C., Elrick, S. D., & Punyasena, S. W. (2026).** Coprolite-filled borings: insight into the life history of detritivorous Pennsylvanian terrestrial arthropods. *Journal of Paleontology*, 1–15.
 
+**Lakeram, S. R., Elrick, S., & Punyasena, S. W. (2023).** Review of the cellulose acetate peel method and the physical and digital curation of coal balls. *Applications in Plant Sciences*, 11(6), e11556. [DOI](https://doi.org/10.1002/aps3.11556)
 
+**Nelson, W. J., DiMichele, W. A., Wilson, B., Wilson, D., Lakeram, S. R., & Elrick, S. D. (2022).** Pennsylvanian-Age Cordaitalean Wood from Knoxville, Iowa. *New Mexico Museum of Natural History and Science Bulletin*.
 
+## Manuscripts in review and preparation
+
+**Lakeram, S. R., Labandeira, C. C., Donovan, M. P., Swain, A., & Punyasena, S. W.** Herbivory in Pennsylvanian Peat Forests: A Systematic Framework for Arthropod Coprolite Morphotypes. *In review.*
+
+**Lakeram, S. R., Labandeira, C. C., Donovan, M. P., Swain, A., & Punyasena, S. W.** Detrital Processing in Pennsylvanian Peat Forests: A Systematic Framework for Arthropod Coprolite Morphotypes. *In review.*
+
+**Lakeram, S. R., Swain, A., Donovan, M., Labandeira, C. C., & Punyasena, S. W.** Fossil feces reveal a food web regime shift during the Middle–Late Pennsylvanian Floral Transition. *In preparation.*
+
+*The manuscript citations above follow the supplied research statement; confirm final author lists and publication statuses before public launch.*
