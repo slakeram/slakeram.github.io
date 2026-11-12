@@ -200,3 +200,17 @@ body:has(.botanical-hero) .botanical-content-panel .botanical-grid {
 @media(max-width:600px){
   body:has(.botanical-hero) .botanical-content-panel {padding:1rem 1.05rem;}
 }
+
+/* Teaching page: four distinct, readable sections instead of uninterrupted prose. */
+.teaching-methods {display:grid;grid-template-columns:1fr;gap:1.4rem;margin:1.5rem 0 2.5rem;}
+.teaching-method-card {background:#f8f3e8;border:1px solid #c9bea8;border-left:5px solid #49694a;border-radius:12px;padding:1.5rem 1.7rem;box-shadow:0 5px 17px rgba(53,43,29,.07);}
+.teaching-method-card:nth-child(even) {background:#eee6d7;border-left-color:#65472d;}
+.teaching-method-header {display:flex;align-items:flex-start;gap:1rem;margin-bottom:.85rem;}
+.teaching-method-number {flex:none;display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;background:#244735;color:#f8f3e8;font-size:.85rem;font-weight:700;letter-spacing:.05em;}
+.teaching-method-card:nth-child(even) .teaching-method-number {background:#65472d;}
+.teaching-method-header h2 {margin:.1rem 0 0!important;padding:0!important;border:0!important;font-size:clamp(1.2rem,2.1vw,1.65rem);line-height:1.25;color:#244735;}
+.teaching-method-card:nth-child(even) h2 {color:#503621;}
+.teaching-method-copy {padding-left:3.6rem;}
+.teaching-method-copy p {margin:0 0 .9rem;line-height:1.7;color:#302d25;}
+.teaching-method-copy p:last-child {margin-bottom:0;}
+@media(max-width:650px){.teaching-method-card{padding:1.1rem 1rem}.teaching-method-header{gap:.7rem}.teaching-method-number{width:2.1rem;height:2.1rem}.teaching-method-copy{padding-left:0}}
