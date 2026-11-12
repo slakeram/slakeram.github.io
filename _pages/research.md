@@ -2,7 +2,7 @@
 layout: single
 title: "Research Themes"
 permalink: /research/
-author_profile: true
+author_profile: false
 ---
 
 <div class="botanical-intro"><p class="botanical-eyebrow">RESEARCH PROGRAM</p><h1>Plant–arthropod interactions and the evolution of terrestrial ecosystems</h1><p>Combining fossil evidence and modern ecological comparisons to understand herbivory, decomposition, food web structure, and environmental change across deep time.</p></div>
