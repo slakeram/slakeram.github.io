@@ -1,5 +1,6 @@
-{% if site.url %}
-  {% assign base_path = site.url | append: site.baseurl %}
-{% else %}
-  {% assign base_path = site.github.url %}
-{% endif %}
+{% comment %}
+Use a same-origin base path so Codespaces previews load stylesheets,
+navigation, scripts, and images from the preview host rather than the
+published GitHub Pages site. Also supports a nonempty site.baseurl.
+{% endcomment %}
+{% assign base_path = site.baseurl | default: '' %}
