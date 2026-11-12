@@ -83,3 +83,69 @@ body {background:var(--cream); color:var(--ink);}
 .botanical-contact-sidebar .author__urls {
   margin-top: .3rem;
 }
+
+/* Woodland palette: deep moss greens, walnut browns, warm paper. */
+:root {
+  --forest:#244735; --deep:#173629; --fern:#52764b;
+  --sage:#d9dfcc; --cream:#f4eee0; --ochre:#986d3c;
+  --ink:#332e25; --leaf:#ebe6d5; --bark:#62452e;
+}
+body { background:var(--cream); color:var(--ink); }
+.masthead, .masthead__inner-wrap, .masthead__menu,
+.greedy-nav, .greedy-nav .visible-links, .greedy-nav .hidden-links {
+  background-color:#d9dfcc !important;
+}
+.masthead { border-bottom-color:#6d7851; }
+.greedy-nav .visible-links a, .greedy-nav .hidden-links a {color:#244735!important;}
+.greedy-nav .visible-links a:hover, .greedy-nav .hidden-links a:hover {background:#c2cbb4!important;color:#62452e!important;}
+.greedy-nav .greedy-nav__toggle, .greedy-nav button {background:#d9dfcc!important;}
+.greedy-nav .greedy-nav__toggle:hover, .greedy-nav button:hover {background:#c2cbb4!important;}
+.page__title, .page__content h2 {color:#244735;}
+.page__content h2 {border-bottom-color:#b8b39a;}
+.page__content h3 {color:#62452e;}
+.page__content a, .author__urls a {color:#386548;}
+.page__content a:hover, .author__urls a:hover {color:#8b5932;}
+.sidebar {background:#e9e5d7;border:1px solid #d5ceb8;}
+.botanical-contact-sidebar .botanical-profile-photo {border-color:#c4cdb6;box-shadow:0 4px 18px rgba(46,39,24,.18);}
+.botanical-hero {
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  background:linear-gradient(116deg,#193c2d 0%,#2c5139 64%,#536044 100%);
+  border-bottom:7px solid #8c6338;
+  padding-right:clamp(2rem,26%,19rem);
+}
+.botanical-hero > :not(.botanical-fern-print) {position:relative;z-index:2;}
+.botanical-hero h1 {text-wrap:balance;}
+.botanical-eyebrow {color:#dfc59a;}
+.botanical-button {background:#e7d0a4;color:#173629!important;}
+.botanical-button:hover {background:#f6e5c5;}
+.botanical-button-light {background:transparent;color:#fff!important;border-color:#d4d9c7;}
+.botanical-card {background:#e4e9d9;border-top-color:#52764b;box-shadow:0 4px 14px rgba(54,45,27,.09);}
+.botanical-card:nth-child(2) {background:#ece0cc;border-top-color:#986d3c;}
+.botanical-card:nth-child(3) {background:#e1e5d5;border-top-color:#766a4b;}
+.botanical-card h3 {color:#244735;}
+.botanical-card span {color:#725d42;}
+.botanical-intro {background:#e1e5d5;}
+.publication-list li {background:#e6e9dd;border-left-color:#66805b;}
+.publication-list li:nth-child(even) {background:#eee2d0;border-left-color:#986d3c;}
+.page__footer {background:#1c3529;}
+/* Hand-carved-style fern silhouette, positioned in the hero's empty right margin. */
+.botanical-fern-print {
+  position:absolute;
+  right:1.3rem;
+  top:50%;
+  transform:translateY(-50%) rotate(-8deg);
+  width:clamp(145px,24%,285px);
+  height:95%;
+  color:#c4c99a;
+  opacity:.38;
+  z-index:1;
+  pointer-events:none;
+  filter:drop-shadow(3px 2px 0 rgba(9,24,16,.25));
+}
+.botanical-fern-print svg {display:block;width:100%;height:100%;}
+@media(max-width:760px){
+  .botanical-hero {padding-right:1.3rem;}
+  .botanical-fern-print {right:-2rem;width:50%;opacity:.12;}
+}
