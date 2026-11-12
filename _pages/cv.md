@@ -1,64 +1,30 @@
 ---
-layout: archive
-title: "CV"
+layout: single
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
-{% include base_path %}
+# Scott Lakeram, Ph.D.
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+**Research Associate**, Smithsonian National Museum of Natural History
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Education
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+- **Ph.D., Plant Biology (Paleobotany)** — University of Illinois Urbana–Champaign, 2025
+- **M.S., Geology** — Texas A&M University, 2020
+- **B.S., Geology** — Hofstra University, 2018
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Appointments
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+- Research Associate, Smithsonian National Museum of Natural History, 2025–present
+- Teaching Faculty, Juneau Icefield Research Program, 2026
+- Predoctoral Fellow, Smithsonian National Museum of Natural History, 2024–2025
+
+## Research interests
+
+Plant–arthropod interactions; paleoecology; Pennsylvanian peat forests; arthropod feeding traces; terrestrial food webs; mangrove ecology; fossil imaging and collections.
+
+## Complete CV
+
+A downloadable PDF will be added here before launch. In the meantime, see the [Publications](/publications/), [Research](/research/), and [Teaching](/teaching/) pages.
