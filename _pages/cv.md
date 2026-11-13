@@ -25,5 +25,5 @@ author_profile: false
 
 ## Research interests
 
-Plant–arthropod interactions; paleoecology; Pennsylvanian peat forests; arthropod feeding traces; terrestrial food webs; mangrove ecology; fossil imaging and collections.
+Plant–Arthropod Interactions; Paleoecology; Paleobotany; Herbivory; Detritivory; Decomposition; Ecosystem Resilience.
 
