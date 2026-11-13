@@ -508,3 +508,34 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
 @media(max-width:480px) {
   .temple-portrait-frame {margin-top:18px;margin-bottom:1.55rem;}
 }
+
+/* Research narrative: concise, illustrated sections with accessible typography. */
+.research-story{max-width:1020px;margin:1.7rem auto 3rem;color:#34483b}
+.research-story>section{padding:2rem 0;border-bottom:1px solid #d7cdb8}
+.research-story>section:last-child{border-bottom:0}
+.research-story h2{font:700 clamp(1.55rem,2.5vw,2.05rem)/1.25 Georgia,serif;color:#2d4936;margin:.25rem 0 1rem}
+.research-story h3{font:700 clamp(1.18rem,1.9vw,1.45rem)/1.35 Georgia,serif;color:#38503b;margin:0 0 .8rem}
+.research-story p{line-height:1.7;margin:0 0 1rem}
+.research-story-eyebrow{font:700 .72rem/1.4 Arial,sans-serif;letter-spacing:.16em;color:#8c7047;margin:0 0 .55rem!important}
+.research-story-opening{max-width:830px}
+.research-story-feature{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:center;margin:1.8rem 0 2.4rem}
+.research-story-feature-reverse .research-story-copy{order:2}
+.research-story-feature-reverse figure{order:1}
+.research-story figure{margin:0}
+.research-story figure img{display:block;width:100%;height:auto;border:1px solid #d1c4ab;border-radius:6px;background:#f5f1e7}
+.research-story figcaption{font:.83rem/1.55 Arial,sans-serif;color:#726e60;margin-top:.55rem}
+.research-story-network{background:#faf8f2;border:1px solid #d9d0bb;border-radius:9px;padding:1rem;margin:1.4rem 0!important}
+.research-story-network img{border:0!important;background:transparent!important}
+.research-story-question{display:grid;grid-template-columns:64px minmax(0,1fr);gap:1.1rem;padding:1.5rem 0;border-top:1px solid #ded5c3}
+.research-story-question:first-of-type{margin-top:1.4rem}
+.research-story-number{font:700 2rem/1 Georgia,serif;color:#9b8157}
+.research-story-question p{max-width:760px}
+.research-story-gallery{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+.research-story-gallery img{width:100%;height:250px!important;object-fit:cover}
+.research-story-note{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:245px;padding:1rem;background:#f4f0e5;border:1px dashed #b7a98d;border-radius:6px;text-align:center}
+.research-story-fossil-symbol{display:flex;gap:15px;align-items:center;justify-content:center;height:120px}
+.research-story-fossil-symbol span{width:28px;height:28px;background:#b4a388;border-radius:50%}
+.research-story-fossil-symbol span:nth-child(2){width:40px;height:40px;border-radius:35%}
+.research-story-fossil-symbol span:nth-child(3){width:20px;height:20px}
+.research-story-further{background:#f6f2e8;border-radius:9px;padding:1.4rem 1.7rem!important;margin-top:2rem}
+@media(max-width:720px){.research-story>section{padding:1.5rem 0}.research-story-feature{grid-template-columns:1fr;gap:1rem}.research-story-feature-reverse .research-story-copy,.research-story-feature-reverse figure{order:initial}.research-story-gallery{grid-template-columns:1fr}.research-story-gallery img{height:auto!important;max-height:350px}.research-story-question{grid-template-columns:46px 1fr;gap:.65rem}.research-story-number{font-size:1.55rem}}
