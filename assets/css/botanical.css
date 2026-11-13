@@ -539,3 +539,12 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
 .research-story-fossil-symbol span:nth-child(3){width:20px;height:20px}
 .research-story-further{background:#f6f2e8;border-radius:9px;padding:1.4rem 1.7rem!important;margin-top:2rem}
 @media(max-width:720px){.research-story>section{padding:1.5rem 0}.research-story-feature{grid-template-columns:1fr;gap:1rem}.research-story-feature-reverse .research-story-copy,.research-story-feature-reverse figure{order:initial}.research-story-gallery{grid-template-columns:1fr}.research-story-gallery img{height:auto!important;max-height:350px}.research-story-question{grid-template-columns:46px 1fr;gap:.65rem}.research-story-number{font-size:1.55rem}}
+
+/* Coprolite specimens: full-width gallery, uncropped images and readable captions. */
+.research-story-coprolites{margin:2rem 0 2.5rem}
+.research-story-coprolites .research-story-copy{max-width:830px}
+.research-story-coprolite-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;align-items:start;margin-top:1.6rem}
+.research-story-coprolite-gallery figure{min-width:0}
+.research-story-coprolite-gallery img{display:block;width:100%;height:auto!important;max-height:430px;object-fit:contain!important;object-position:center;background:#f5f1e7}
+.research-story-coprolite-gallery figcaption{margin-top:.75rem}
+@media(max-width:720px){.research-story-coprolite-gallery{grid-template-columns:1fr;gap:1.75rem}.research-story-coprolite-gallery img{max-height:none}}
