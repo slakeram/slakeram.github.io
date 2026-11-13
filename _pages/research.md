@@ -32,19 +32,19 @@ author_profile: false
     <div class="coal-book-gallery" data-coal-book-gallery aria-label="Phillips Coal Ball Collection image gallery">
       <div class="coal-book-heading">
         <p class="research-story-eyebrow">ARCHIVAL PLATES</p>
-        <h4>Coal-ball plant anatomy</h4>
+        <h4>Plant anatomy in Coal Ball</h4>
       </div>
       <figure class="coal-book-figure">
         <div class="coal-book-stage">
           <a class="coal-book-enlarge" href="{{ '/images/TC-Ferns%20page%201.jpeg' | relative_url }}" target="_blank" rel="noopener" aria-label="Open current archival plate at full resolution">
-            <img class="coal-book-image" src="{{ '/images/TC-Ferns%20page%201.jpeg' | relative_url }}" alt="Archival coal-ball plate 1 of 5, examples 1–3, Phillips Coal Ball Collection" loading="lazy">
+            <img class="coal-book-image" src="{{ '/images/TC-Ferns%20page%201.jpeg' | relative_url }}" alt="Archival coal-ball plate 1 of 5, examples 1–3, Phillips Coal Ball Collection" loading="eager" decoding="async">
           </a>
         </div>
         <figcaption class="coal-book-caption">Material from the <strong>Phillips Coal Ball Collection</strong>.</figcaption>
       </figure>
       <nav class="coal-book-controls" aria-label="Navigate archival plates">
         <button class="coal-book-prev" type="button" aria-label="Previous plate">← Previous</button>
-        <span class="coal-book-count" role="status" aria-live="polite">Plate 1 of 5 · Examples 1–3</span>
+        <span class="coal-book-count" role="status" aria-live="polite">Plate 1</span>
         <button class="coal-book-next" type="button" aria-label="Next plate">Next →</button>
       </nav>
     </div>
@@ -60,6 +60,20 @@ author_profile: false
         ['TC-Ferns page 4.jpeg', '8–9'],
         ['TC-Ferns page 5.jpeg', '10']
       ];
+      const cached = new Map();
+      function pageUrl(i) { return base + encodeURIComponent(pages[i][0]); }
+      function preload(i) {
+        const position = (i + pages.length) % pages.length;
+        if (cached.has(position)) return cached.get(position);
+        const img = new Image();
+        const promise = new Promise(function (resolve, reject) {
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+        img.src = pageUrl(position);
+        cached.set(position, promise);
+        return promise;
+      }
       let index = 0;
       let busy = false;
       const image = root.querySelector('.coal-book-image');
@@ -69,18 +83,17 @@ author_profile: false
       const next = root.querySelector('.coal-book-next');
       const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
       function updateButtons() {
-        prev.disabled = busy || index === 0;
-        next.disabled = busy || index === pages.length - 1;
+        prev.disabled = busy;
+        next.disabled = busy;
       }
       function showPage(direction) {
-        const target = index + direction;
-        if (busy || target < 0 || target >= pages.length) return;
+        const target = (index + direction + pages.length) % pages.length;
+        if (busy) return;
         busy = true;
         updateButtons();
         const file = pages[target][0];
-        const url = base + encodeURIComponent(file);
-        const incoming = new Image();
-        incoming.onload = function () {
+        const url = pageUrl(target);
+        preload(target).then(function () {
           const animate = !reduceMotion.matches;
           if (animate) image.classList.add(direction > 0 ? 'coal-book-turn-next' : 'coal-book-turn-prev');
           window.setTimeout(function () {
@@ -88,20 +101,20 @@ author_profile: false
             image.src = url;
             image.alt = 'Archival coal-ball plate ' + (index + 1) + ' of 5, examples ' + pages[index][1] + ', Phillips Coal Ball Collection';
             link.href = url;
-            count.textContent = 'Plate ' + (index + 1) + ' of 5 · Examples ' + pages[index][1];
+            count.textContent = 'Plate ' + (index + 1);
             image.classList.remove('coal-book-turn-next', 'coal-book-turn-prev');
             if (animate) {
               image.classList.add('coal-book-arrive');
               window.setTimeout(function () { image.classList.remove('coal-book-arrive'); busy = false; updateButtons(); }, 360);
             } else { busy = false; updateButtons(); }
+            preload((index + 1) % pages.length).catch(function () {});
+            preload((index - 1 + pages.length) % pages.length).catch(function () {});
           }, animate ? 360 : 0);
-        };
-        incoming.onerror = function () {
+        }).catch(function () {
           busy = false;
           updateButtons();
           count.textContent = 'Plate image unavailable; please check the uploaded filename.';
-        };
-        incoming.src = url;
+        });
       }
       prev.addEventListener('click', function () { showPage(-1); });
       next.addEventListener('click', function () { showPage(1); });
@@ -110,6 +123,8 @@ author_profile: false
         if (event.key === 'ArrowRight') { event.preventDefault(); showPage(1); }
       });
       updateButtons();
+      preload(1).catch(function () {});
+      preload(pages.length - 1).catch(function () {});
     }());
     </script>
     <div class="research-story-coprolites">
