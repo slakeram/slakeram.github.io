@@ -214,3 +214,33 @@ body:has(.botanical-hero) .botanical-content-panel .botanical-grid {
 .teaching-method-copy p {margin:0 0 .9rem;line-height:1.7;color:#302d25;}
 .teaching-method-copy p:last-child {margin-bottom:0;}
 @media(max-width:650px){.teaching-method-card{padding:1.1rem 1rem}.teaching-method-header{gap:.7rem}.teaching-method-number{width:2.1rem;height:2.1rem}.teaching-method-copy{padding-left:0}}
+
+/* Page-specific, thick walnut kolam-inspired side ornaments.
+   Research: fern and millipede; Teaching: botanical loops;
+   Publications: diamonds; CV: restrained geometric vines. */
+.kolam-page-marker {display:none;}
+body:has(.kolam-page-marker) .page__content {position:relative;isolation:isolate;}
+body:has(.kolam-page-marker) .page__content::before,
+body:has(.kolam-page-marker) .page__content::after {
+  content:"";position:absolute;top:0;bottom:0;width:58px;
+  background-image:var(--kolam-border);
+  background-position:center top;
+  background-repeat:repeat-y;background-size:58px 260px;
+  opacity:.88;pointer-events:none;z-index:-1;
+}
+body:has(.kolam-page-marker) .page__content::before {left:-78px;}
+body:has(.kolam-page-marker) .page__content::after {right:-78px;transform:scaleX(-1);}
+body:has(.kolam-research) .page__content {--kolam-border:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2258%22%20height%3D%22260%22%20viewBox%3D%220%200%2058%20260%22%3E%3Cg%20stroke%3D%22%233f2418%22%20stroke-width%3D%225.2%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M29%200%20C5%2020%205%2047%2029%2065%20S53%20111%2029%20130%20S5%20176%2029%20195%20S53%20241%2029%20260%22%2F%3E%3Cpath%20d%3D%22M29%200%20C53%2020%2053%2047%2029%2065%20S5%20111%2029%20130%20S53%20176%2029%20195%20S5%20241%2029%20260%22%2F%3E%3Cpath%20d%3D%22M7%2064%20Q29%2040%2051%2064%20Q29%2088%207%2064Z%22%2F%3E%3Cpath%20d%3D%22M7%20194%20Q29%20170%2051%20194%20Q29%20218%207%20194Z%22%2F%3E%3C%2Fg%3E%3Cg%20stroke%3D%22%233f2418%22%20stroke-width%3D%222.8%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M29%2097%20Q31%20130%2029%20162%22%2F%3E%3Cpath%20d%3D%22M29%20110l-14%20-10m14%2018%2014%20-10m-14%2020-14%20-9m14%2019%2014%20-10m-14%2019-12%20-7%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%233f2418%22%3E%3Cellipse%20cx%3D%2229%22%20cy%3D%22225%22%20rx%3D%225%22%20ry%3D%2213%22%2F%3E%3Ccircle%20cx%3D%2229%22%20cy%3D%22210%22%20r%3D%225%22%2F%3E%3C%2Fg%3E%3Cg%20stroke%3D%22%233f2418%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M24%20218l-8%205m18%20-5%208%205%22%2F%3E%3Cpath%20d%3D%22M24%20221l-8%205m18%20-5%208%205%22%2F%3E%3Cpath%20d%3D%22M24%20224l-8%205m18%20-5%208%205%22%2F%3E%3Cpath%20d%3D%22M24%20227l-8%205m18%20-5%208%205%22%2F%3E%3Cpath%20d%3D%22M24%20230l-8%205m18%20-5%208%205%22%2F%3E%3Cpath%20d%3D%22M24%20233l-8%205m18%20-5%208%205%22%2F%3E%3Cpath%20d%3D%22M24%20236l-8%205m18%20-5%208%205%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");}
+body:has(.kolam-teaching) .page__content {--kolam-border:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2258%22%20height%3D%22260%22%20viewBox%3D%220%200%2058%20260%22%3E%3Cg%20stroke%3D%22%233f2418%22%20stroke-width%3D%225.5%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M29%200%20C-4%2024%204%2055%2029%2065%20C54%2055%2062%2024%2029%200Z%22%2F%3E%3Cpath%20d%3D%22M29%2065%20C-4%2089%204%20120%2029%20130%20C54%20120%2062%2089%2029%2065Z%22%2F%3E%3Cpath%20d%3D%22M29%20130%20C-4%20154%204%20185%2029%20195%20C54%20185%2062%20154%2029%20130Z%22%2F%3E%3Cpath%20d%3D%22M29%20195%20C-4%20219%204%20250%2029%20260%20C54%20250%2062%20219%2029%20195Z%22%2F%3E%3Cpath%20d%3D%22M7%2065Q29%2089%2051%2065M7%20195Q29%20219%2051%20195%22%2F%3E%3C%2Fg%3E%3Cg%20stroke%3D%22%233f2418%22%20stroke-width%3D%223%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M29%2028v28m0-18-11-9m11%2015%2012-10M29%20157v29m0-21-11-9m11%2016%2012-10%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");}
+body:has(.kolam-publications) .page__content {--kolam-border:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2258%22%20height%3D%22260%22%20viewBox%3D%220%200%2058%20260%22%3E%3Cg%20stroke%3D%22%233f2418%22%20stroke-width%3D%225.6%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M29%200L54%2032%2029%2065%204%2032Z%20M29%2065L54%2097%2029%20130%204%2097Z%20M29%20130L54%20162%2029%20195%204%20162Z%20M29%20195L54%20227%2029%20260%204%20227Z%22%2F%3E%3Cpath%20d%3D%22M29%200v260M4%2032h50M4%2097h50M4%20162h50M4%20227h50%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%233f2418%22%3E%3Ccircle%20cx%3D%2229%22%20cy%3D%2232%22%20r%3D%225%22%2F%3E%3Ccircle%20cx%3D%2229%22%20cy%3D%2297%22%20r%3D%225%22%2F%3E%3Ccircle%20cx%3D%2229%22%20cy%3D%22162%22%20r%3D%225%22%2F%3E%3Ccircle%20cx%3D%2229%22%20cy%3D%22227%22%20r%3D%225%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");}
+body:has(.kolam-cv) .page__content {--kolam-border:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2258%22%20height%3D%22260%22%20viewBox%3D%220%200%2058%20260%22%3E%3Cg%20stroke%3D%22%233f2418%22%20stroke-width%3D%225.5%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M29%200Q-2%2030%2029%2065Q60%2030%2029%200Z%20M29%2065Q-2%2095%2029%20130Q60%2095%2029%2065Z%20M29%20130Q-2%20160%2029%20195Q60%20160%2029%20130Z%20M29%20195Q-2%20225%2029%20260Q60%20225%2029%20195Z%22%2F%3E%3Cpath%20d%3D%22M29%200v260%22%2F%3E%3C%2Fg%3E%3Cg%20stroke%3D%22%233f2418%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M29%2030l-10-8m10%2016%2010-8M29%20160l-10-8m10%2016%2010-8%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");}
+
+@media(max-width:1200px) {
+ body:has(.kolam-page-marker) .page__content::before {left:-56px;width:42px;background-size:42px 188px;}
+ body:has(.kolam-page-marker) .page__content::after {right:-56px;width:42px;background-size:42px 188px;}
+}
+@media(max-width:850px) {
+ body:has(.kolam-page-marker) .page__content::before,
+ body:has(.kolam-page-marker) .page__content::after {display:none;}
+ body:has(.kolam-page-marker) .page__content {border-top:5px solid #3f2418;padding-top:1.2rem;}
+}
