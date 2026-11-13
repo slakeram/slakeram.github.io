@@ -429,3 +429,28 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
   .temple-portrait-frame {width:210px;padding:18px;}
   .botanical-contact-sidebar .temple-portrait-inner .botanical-profile-photo-film {height:207px;}
 }
+
+/* Refined temple-inspired portrait: narrower sandstone moulding, carved lotus
+   ornament and a clean inset photograph. No ornament crosses the image. */
+.temple-portrait-frame {
+  width:202px;
+  padding:14px;
+  background:linear-gradient(135deg,#e9dec7 0%,#d8c7a7 48%,#eee2ca 100%);
+  border:1px solid #866f50;
+  box-shadow:0 5px 16px rgba(45,34,23,.14);
+  color:#65492f;
+}
+.temple-portrait-inner {
+  z-index:3;
+  border:1px solid #755a3e;
+  box-shadow:0 0 0 2px rgba(251,243,224,.55);
+}
+.botanical-contact-sidebar .temple-portrait-inner .botanical-profile-photo-film {
+  height:232px;
+  object-position:center 43%;
+}
+.temple-portrait-ornament {z-index:2;}
+@media(max-width:480px) {
+  .temple-portrait-frame {width:202px;padding:14px;}
+  .botanical-contact-sidebar .temple-portrait-inner .botanical-profile-photo-film {height:232px;}
+}
