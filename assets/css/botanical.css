@@ -285,7 +285,7 @@ body:has(.botanical-hero) .page__title {display:none;}
   text-wrap:balance;
 }
 .botanical-hero .botanical-hero-degree {
-  font-size:.91rem;
+  font-size:clamp(1.2rem,2vw,1.5rem);
   font-weight:600;
   letter-spacing:.035em;
   color:#eadbb9;
