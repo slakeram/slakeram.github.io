@@ -354,3 +354,6 @@ body:has(.botanical-hero) .botanical-profile-photo {
  .teaching-mentorship-panel {padding:1.25rem;}
  .teaching-photo-gallery img {height:clamp(145px,38vw,210px);}
 }
+
+/* CV identity heading aligns with the left edge of the section headings and content. */
+body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem!important;padding:0!important;font-family:Georgia,serif;color:#244735;line-height:1.2;}
