@@ -337,9 +337,9 @@ body:has(.botanical-hero) .botanical-profile-photo {
 .teaching-methods-grid .teaching-method-number {width:2.2rem;height:2.2rem;font-size:.76rem;}
 .teaching-methods-grid .teaching-method-copy {padding-left:0;}
 .teaching-methods-grid .teaching-method-copy p {font-size:.94rem;line-height:1.6;}
-.teaching-photo-gallery {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.85rem;margin:1.1rem 0 2.2rem;}
+.teaching-photo-gallery {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem;margin:1.1rem 0 2.2rem;}
 .teaching-photo-gallery figure {margin:0;min-width:0;background:#f8f3e8;border:1px solid #cbbca5;border-radius:9px;overflow:hidden;box-shadow:0 3px 12px rgba(51,40,26,.08);}
-.teaching-photo-gallery img {display:block;width:100%;height:165px;object-fit:cover;}
+.teaching-photo-gallery img {display:block;width:100%;height:clamp(220px,27vw,310px);object-fit:cover;}
 .teaching-photo-gallery figcaption {font-size:.78rem;font-weight:650;line-height:1.45;color:#4a3b2b;padding:.65rem .72rem;}
 .teaching-mentorship-panel {background:linear-gradient(115deg,#244735,#36583d);color:#f9f4e8;border-radius:12px;padding:1.7rem 2rem;margin:2rem 0 2.5rem;border-bottom:5px solid #785234;}
 .teaching-mentorship-panel h2 {margin:0 0 .8rem!important;padding:0!important;border:0!important;color:#fff7e8!important;font-family:Georgia,serif;}
@@ -347,10 +347,10 @@ body:has(.botanical-hero) .botanical-profile-photo {
 @media(max-width:900px){
  .teaching-methods-grid {grid-template-columns:1fr;}
  .teaching-photo-gallery {grid-template-columns:repeat(2,minmax(0,1fr));}
- .teaching-photo-gallery img {height:190px;}
+ .teaching-photo-gallery img {height:clamp(190px,35vw,270px);}
 }
 @media(max-width:580px){
  .teaching-page-intro {padding:1.1rem 1.15rem;}
  .teaching-mentorship-panel {padding:1.25rem;}
- .teaching-photo-gallery img {height:135px;}
+ .teaching-photo-gallery img {height:clamp(145px,38vw,210px);}
 }
