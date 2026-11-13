@@ -40,7 +40,7 @@ author_profile: false
             <img class="coal-book-image" src="{{ '/images/coal-ball-plate-1-web.jpg' | relative_url }}" alt="Archival coal-ball plate 1 of 5, examples 1–3, Phillips Coal Ball Collection" loading="eager" decoding="async">
           </a>
         </div>
-        <figcaption class="coal-book-caption">Material from the <strong>Phillips Coal Ball Collection</strong>.</figcaption>
+        <figcaption class="coal-book-caption">Material from the Phillips Coal Ball Collection.</figcaption>
       </figure>
       <nav class="coal-book-controls" aria-label="Navigate archival plates">
         <button class="coal-book-prev" type="button" aria-label="Previous plate">← Previous</button>
