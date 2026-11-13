@@ -30,9 +30,9 @@ author_profile: false
         <p>Coal balls are mineralized masses of ancient peat that preserve plant tissues in remarkable anatomical detail. Unlike many fossils that preserve external impressions, coal balls can reveal the internal structures of roots, stems, leaves, and other plant organs.</p>
         <p>They provide a rare glimpse into the plants that formed Pennsylvanian peat forests and the organisms that interacted with them.</p>
       </div>
-      <figure>
-        <img src="{{ '/images/cordaite%20wood%20copro%20mite.png' | relative_url }}" alt="Microscopic fossil evidence associated with cordaite wood, a coprolite and a mite" loading="lazy"/>
-        <figcaption>Fossil evidence preserved in association with cordaite wood.</figcaption>
+      <figure class="research-story-note">
+        <div class="research-story-fossil-symbol" aria-hidden="true"><span></span><span></span><span></span></div>
+        <figcaption>Coal ball specimen or anatomical peel image to be added.</figcaption>
       </figure>
     </div>
     <div class="research-story-feature research-story-feature-reverse">
@@ -41,10 +41,16 @@ author_profile: false
         <p>Coprolites are fossilized fecal material that preserve evidence of what ancient organisms consumed. Their shapes, internal structures, and preserved plant fragments provide clues about feeding behavior that would otherwise be difficult to recognize in the fossil record.</p>
         <p>They are particularly valuable for studying small arthropods whose bodies are rarely preserved. I have examined more than 6,000 coprolites and developed systematic frameworks for 26 morphotypes to investigate herbivory and detritivory.</p>
       </div>
-      <figure class="research-story-note">
-        <div class="research-story-fossil-symbol" aria-hidden="true"><span></span><span></span><span></span></div>
-        <figcaption>Coprolite micrograph to be added: <em>Convolutispora matrix coprolite.png</em>.</figcaption>
-      </figure>
+      <div class="research-story-gallery research-story-coprolite-gallery">
+        <figure>
+          <img src="{{ '/images/cordaite%20wood%20copro%20mite.png' | relative_url }}" alt="Fossil coprolite and associated mite in cordaite wood" loading="lazy"/>
+          <figcaption>Coprolite and associated arthropod evidence preserved in cordaite wood.</figcaption>
+        </figure>
+        <figure>
+          <img src="{{ '/images/Convolutispora%20matrix%20coprolite.png' | relative_url }}" alt="Coprolite preserved within a Convolutispora matrix" loading="lazy"/>
+          <figcaption>Coprolite preserved in a <em>Convolutispora</em> matrix.</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
