@@ -19,15 +19,17 @@ redirect_from:
 
 <section class="botanical-content-panel" markdown="1">
 
-## About
+## About Me
 
 Born and raised in Queens, New York, I am a first-generation Indo-Caribbean American. From an early age, I was fascinated by the natural world and the stories fossils could tell about life long before us. In many ways, I was the kid who loved fossils and never quite grew up. That childhood curiosity has stayed with me and continues to shape the questions I ask.
+
+My fascination with the past extends beyond fossils. I'm also an avid motorcyclist with a love for Japanese and British motorcycles from the 1970s and 1980s.
+
+## My Research
 
 My research explores the ecological relationships between plants and animals during the Paleozoic and their role in shaping terrestrial ecosystems. I am particularly interested in herbivory and decomposition in ancient forests, as well as how organisms responded to changes in their environments.
 
 By studying fossil plants and feeding traces, including coprolites (fossilized fecal material), I investigate how terrestrial arthropods utilized available resources and contributed to the functioning of ancient ecosystems. Connecting this fossil evidence with observations from modern ecosystems provides a broader perspective on the ecological processes that shape communities and how these relationships have changed through time.
-
-My fascination with the past extends beyond fossils. I'm also an avid motorcyclist with a love for Japanese and British motorcycles from the 1970s and 1980s.
 
 </section>
 
