@@ -55,7 +55,7 @@ author_profile: false
       const base = {{ '/images/' | relative_url | jsonify }};
       const pages = [
         ['TC-Ferns page 1.jpeg', '1–3'],
-        ['TC-Ferns page 2jpeg', '4–5'],
+        ['TC-Ferns page 2jpeg.jpeg', '4–5'],
         ['TC-Ferns page 3.jpeg', '6–7'],
         ['TC-Ferns page 4.jpeg', '8–9'],
         ['TC-Ferns page 5.jpeg', '10']
