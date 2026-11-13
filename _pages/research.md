@@ -37,7 +37,7 @@ author_profile: false
       <figure class="coal-book-figure">
         <div class="coal-book-stage">
           <a class="coal-book-enlarge" href="{{ '/images/TC-Ferns%20page%201.jpeg' | relative_url }}" target="_blank" rel="noopener" aria-label="Open current archival plate at full resolution">
-            <img class="coal-book-image" src="{{ '/images/TC-Ferns%20page%201.jpeg' | relative_url }}" alt="Archival coal-ball plate 1 of 5, examples 1–3, Phillips Coal Ball Collection" loading="eager" decoding="async">
+            <img class="coal-book-image" src="{{ '/images/coal-ball-plate-1-web.jpg' | relative_url }}" alt="Archival coal-ball plate 1 of 5, examples 1–3, Phillips Coal Ball Collection" loading="eager" decoding="async">
           </a>
         </div>
         <figcaption class="coal-book-caption">Material from the <strong>Phillips Coal Ball Collection</strong>.</figcaption>
@@ -62,6 +62,7 @@ author_profile: false
       ];
       const cached = new Map();
       function pageUrl(i) { return base + encodeURIComponent(pages[i][0]); }
+      function previewUrl(i) { return base + 'coal-ball-plate-' + (i + 1) + '-web.jpg'; }
       function preload(i) {
         const position = (i + pages.length) % pages.length;
         if (cached.has(position)) return cached.get(position);
@@ -70,7 +71,7 @@ author_profile: false
           img.onload = resolve;
           img.onerror = reject;
         });
-        img.src = pageUrl(position);
+        img.src = previewUrl(position);
         cached.set(position, promise);
         return promise;
       }
@@ -92,7 +93,7 @@ author_profile: false
         busy = true;
         updateButtons();
         const file = pages[target][0];
-        const url = pageUrl(target);
+        const url = previewUrl(target);
         preload(target).then(function () {
           const animate = !reduceMotion.matches;
           if (animate) image.classList.add(direction > 0 ? 'coal-book-turn-next' : 'coal-book-turn-prev');
@@ -100,7 +101,7 @@ author_profile: false
             index = target;
             image.src = url;
             image.alt = 'Archival coal-ball plate ' + (index + 1) + ' of 5, examples ' + pages[index][1] + ', Phillips Coal Ball Collection';
-            link.href = url;
+            link.href = pageUrl(index);
             count.textContent = 'Plate ' + (index + 1);
             image.classList.remove('coal-book-turn-next', 'coal-book-turn-prev');
             if (animate) {
