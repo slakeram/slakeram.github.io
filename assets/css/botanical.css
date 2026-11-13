@@ -237,7 +237,7 @@ body:has(.kolam-page-marker) .masthead::after {
   background-repeat:repeat-x;
   background-size:auto 100px;
   border-top:2px solid #3f2418;
-  border-bottom:2px solid #3f2418;
+  border-bottom:none;
   box-sizing:border-box;
   pointer-events:none;
 }
