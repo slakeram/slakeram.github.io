@@ -33,28 +33,26 @@ author_profile: false
       <div class="coal-book-heading">
         <p class="research-story-eyebrow">ARCHIVAL PLATES</p>
         <h4>Coal-ball plant anatomy</h4>
-        <p>Explore five historical plates documenting anatomically preserved plant remains. Use the arrows to turn the pages, or select an image to view it at full size.</p>
       </div>
       <figure class="coal-book-figure">
         <div class="coal-book-stage">
-          <a class="coal-book-enlarge" href="{{ '/images/coal-ball-gallery/TC-Ferns%20page%201.jpeg' | relative_url }}" target="_blank" rel="noopener" aria-label="Open current archival plate at full resolution">
-            <img class="coal-book-image" src="{{ '/images/coal-ball-gallery/TC-Ferns%20page%201.jpeg' | relative_url }}" alt="Archival coal-ball plate 1 of 5, examples 1–3, Phillips Coal Ball Collection" loading="lazy">
+          <a class="coal-book-enlarge" href="{{ '/images/TC-Ferns%20page%201.jpeg' | relative_url }}" target="_blank" rel="noopener" aria-label="Open current archival plate at full resolution">
+            <img class="coal-book-image" src="{{ '/images/TC-Ferns%20page%201.jpeg' | relative_url }}" alt="Archival coal-ball plate 1 of 5, examples 1–3, Phillips Coal Ball Collection" loading="lazy">
           </a>
         </div>
-        <figcaption class="coal-book-caption">Historical coal-ball plant anatomy plates. Material from the <strong>Phillips Coal Ball Collection</strong>.</figcaption>
+        <figcaption class="coal-book-caption">Material from the <strong>Phillips Coal Ball Collection</strong>.</figcaption>
       </figure>
       <nav class="coal-book-controls" aria-label="Navigate archival plates">
         <button class="coal-book-prev" type="button" aria-label="Previous plate">← Previous</button>
         <span class="coal-book-count" role="status" aria-live="polite">Plate 1 of 5 · Examples 1–3</span>
         <button class="coal-book-next" type="button" aria-label="Next plate">Next →</button>
       </nav>
-      <p class="coal-book-credit">Image source: Phillips Coal Ball Collection. Original publication details and reproduction credit to be added.</p>
     </div>
     <script>
     (function () {
       const root = document.querySelector('[data-coal-book-gallery]');
       if (!root) return;
-      const base = {{ '/images/coal-ball-gallery/' | relative_url | jsonify }};
+      const base = {{ '/images/' | relative_url | jsonify }};
       const pages = [
         ['TC-Ferns page 1.jpeg', '1–3'],
         ['TC-Ferns page 2jpeg', '4–5'],
