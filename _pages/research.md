@@ -17,8 +17,8 @@ author_profile: false
 
   <section class="research-story-opening" aria-labelledby="research-intro">
     <h2 id="research-intro">Understanding ancient ecosystems</h2>
-    <p>Plants and arthropods have shaped terrestrial ecosystems for hundreds of millions of years. Through feeding and decomposition, these interactions influence how ecosystems function and respond to environmental change. Yet much of their early evolutionary history remains poorly understood.</p>
-    <p>Fossil feeding traces from Pennsylvanian peat-forming forests provide a window into how plants and arthropods interacted in ancient ecosystems. Research combining these traces with modern ecological comparisons examines the organization of ancient food webs, patterns of plant-resource use, and changes in ecological relationships through time.</p>
+    <p>Plants and arthropods have shaped terrestrial ecosystems for hundreds of millions of years. Through feeding and decomposition, their interactions influence how ecosystems function and respond to environmental change. Yet the early evolutionary history of these ecological relationships remains poorly understood. Trace fossils, which preserve evidence of an organism's activity rather than its physical remains, offer a way to investigate these ancient interactions.</p>
+    <p>Fossil feeding traces from Pennsylvanian coal balls provide evidence of how arthropods utilized plant resources. By examining these traces alongside modern ecological systems, my research investigates the ecological roles of arthropods, the structure of ancient food webs, and how patterns of resource use changed through time.</p>
   </section>
 
   <section aria-labelledby="fossil-evidence">
