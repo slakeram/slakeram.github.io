@@ -22,7 +22,6 @@ author_profile: false
   </section>
 
   <section aria-labelledby="fossil-evidence">
-    <p class="research-story-eyebrow">THE FOSSIL EVIDENCE</p>
     <h2 id="fossil-evidence">Windows into ancient ecosystems</h2>
     <div class="research-story-copy">
       <h3>Coal balls: Preserving ancient forests</h3>
