@@ -21,11 +21,13 @@ redirect_from:
 
 ## About
 
-I am a first-generation Indo-Caribbean scientist from Queens, New York. Growing up, I was fascinated by the natural world, especially fossils and the stories they could tell about life long before us. In many ways, I was the kid who loved fossils and never quite grew up. That childhood curiosity has stayed with me and continues to shape the questions I ask as a researcher.
+Born and raised in Queens, New York, I am a first-generation Indo-Caribbean American. From an early age, I was fascinated by the natural world and the stories fossils could tell about life long before us. In many ways, I was the kid who loved fossils and never quite grew up. That childhood curiosity has stayed with me and continues to shape the questions I ask.
 
-My research explores how plants and animals interacted millions of years ago during the Paleozoic and how these relationships shaped the evolution of terrestrial ecosystems. I am particularly interested in the roles of herbivory and decomposition in ancient forests, and how organisms responded to changes in their environments. By studying these interactions, I aim to better understand how ecosystems functioned in the past and what they can tell us about ecological change through time.
+My research explores the ecological relationships between plants and animals during the Paleozoic and their role in shaping terrestrial ecosystems. I am particularly interested in herbivory and decomposition in ancient forests, as well as how organisms responded to changes in their environments.
 
-By studying fossil plants and feeding traces, including coprolites (fossilized fecal material), I explore how plants and arthropods interacted, utilized available resources, and contributed to the functioning of ancient ecosystems. Connecting this fossil evidence with observations from modern ecosystems provides a broader perspective on the ecological processes that shape communities and how these relationships have changed through time.
+By studying fossil plants and feeding traces, including coprolites (fossilized fecal material), I investigate how terrestrial arthropods utilized available resources and contributed to the functioning of ancient ecosystems. Connecting this fossil evidence with observations from modern ecosystems provides a broader perspective on the ecological processes that shape communities and how these relationships have changed through time.
+
+My fascination with the past extends beyond fossils. I'm also an avid motorcyclist with a love for Japanese and British motorcycles from the 1970s and 1980s.
 
 </section>
 
