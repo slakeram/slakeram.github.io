@@ -29,7 +29,7 @@ author_profile: false
       <p>Coal balls formed when mineral-rich water entered ancient peat deposits and minerals, commonly calcium carbonate, precipitated around buried plant material. This early mineralization preserved delicate tissues before they were compacted and altered during coal formation.</p>
       <p>As a result, coal balls can preserve roots, stems, leaves, and other plant organs in remarkable anatomical detail. They provide a rare glimpse into the plants of Pennsylvanian peat forests and the organisms that interacted with them.</p>
     </div>
-    <div class="research-story-feature research-story-feature-reverse">
+    <div class="research-story-coprolites">
       <div class="research-story-copy">
         <h3>Coprolites: Evidence of ancient feeding</h3>
         <p>Coprolites are fossilized fecal material that preserve evidence of what ancient organisms consumed. Their shapes, internal structures, and preserved plant fragments provide clues about feeding behavior that would otherwise be difficult to recognize in the fossil record.</p>
