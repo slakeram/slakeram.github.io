@@ -5,6 +5,8 @@ permalink: /cv/
 author_profile: false
 ---
 
+<div class="kolam-page-marker kolam-cv" aria-hidden="true"></div>
+
 # Scott Lakeram, Ph.D.
 
 **Research Associate**, Smithsonian National Museum of Natural History
