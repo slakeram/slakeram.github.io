@@ -14,7 +14,7 @@ redirect_from:
   <p class="botanical-eyebrow">PALEOBOTANY · PALEOECOLOGY · PLANT–ARTHROPOD INTERACTIONS</p>
   <h1 class="botanical-hero-name">Scott Lakeram</h1>
   <p class="botanical-hero-degree">Ph.D.</p>
-  <h2 class="botanical-hero-focus">Fossils, food webs, and the history of life on land.</h2>
+  <h2 class="botanical-hero-focus">Understanding ancient ecosystems through the fossil record.</h2>
   <div class="botanical-actions">
     <a href="/research/" class="botanical-button">Explore my research</a>
     <a href="/cv/" class="botanical-button botanical-button-light">View CV</a>
