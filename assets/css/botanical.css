@@ -577,3 +577,97 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
     0 0 0 4px rgba(91,59,35,.19),
     inset 0 2px 4px rgba(45,29,18,.25);
 }
+
+/* Responsive botanical navigation: horizontal links on wide screens and
+   an accessible native details dropdown on tablets and phones. */
+.botanical-site-nav {
+  position:relative;
+  max-width:100%;
+  background:transparent;
+  color:#244735;
+  font-family:Arial,sans-serif;
+}
+.botanical-nav-desktop {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:0;
+}
+.botanical-site-nav .botanical-nav-link {
+  display:inline-flex;
+  align-items:center;
+  min-height:55px;
+  padding:.85rem 1.15rem;
+  color:#244735;
+  font-size:1rem;
+  font-weight:700;
+  text-decoration:none;
+  border-bottom:3px solid transparent;
+}
+.botanical-site-nav .botanical-nav-link:hover,
+.botanical-site-nav .botanical-nav-link:focus-visible {
+  background:#c2cbb4;
+  color:#3f2a1d;
+}
+.botanical-site-nav .botanical-nav-link.is-current {
+  border-bottom-color:#75451f;
+}
+.botanical-nav-dropdown {display:none;}
+@media (max-width:800px) {
+  .botanical-site-nav .botanical-nav-desktop {display:none;}
+  .botanical-nav-dropdown {display:block;position:relative;}
+  .botanical-nav-dropdown > summary {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:1rem;
+    box-sizing:border-box;
+    min-height:54px;
+    padding:.8rem 1.1rem;
+    font-weight:700;
+    color:#244735;
+    background:#d9dfcc;
+    cursor:pointer;
+    list-style:none;
+  }
+  .botanical-nav-dropdown > summary::-webkit-details-marker {display:none;}
+  .botanical-nav-dropdown > summary::marker {content:"";}
+  .botanical-nav-dropdown > summary:hover,
+  .botanical-nav-dropdown > summary:focus-visible {
+    background:#c2cbb4;
+  }
+  .botanical-nav-dropdown[open] > summary {background:#c2cbb4;}
+  .botanical-nav-menu-icon {flex:none;transition:transform .16s ease;}
+  .botanical-nav-dropdown[open] .botanical-nav-menu-icon {transform:rotate(90deg);}
+  .botanical-nav-dropdown-list {
+    position:absolute;
+    left:0;
+    right:0;
+    top:100%;
+    z-index:1000;
+    display:block;
+    padding:.4rem 0;
+    margin:0;
+    list-style:none;
+    background:#f4eee0;
+    border:1px solid #b8ae92;
+    border-top:3px solid #75451f;
+    border-radius:0 0 7px 7px;
+    box-shadow:0 9px 18px rgba(45,34,23,.18);
+  }
+  .botanical-nav-dropdown-list li {margin:0;padding:0;list-style:none;}
+  .botanical-nav-dropdown-list a {
+    display:block;
+    padding:.8rem 1.2rem;
+    color:#244735;
+    font-size:1rem;
+    font-weight:650;
+    text-decoration:none;
+  }
+  .botanical-nav-dropdown-list a:hover,
+  .botanical-nav-dropdown-list a:focus-visible,
+  .botanical-nav-dropdown-list a[aria-current="page"] {
+    color:#3f2a1d;
+    background:#e2dac7;
+  }
+}
