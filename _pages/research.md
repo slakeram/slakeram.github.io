@@ -94,7 +94,7 @@ author_profile: false
     <p>Modern ecosystems offer valuable comparisons for interpreting processes preserved in the fossil record. My ongoing research in the Florida Keys examines insect herbivory on mangrove foliage across environmental gradients. Complementary investigations in South Florida wetlands examine plant litter, arthropod activity, and organic-matter accumulation.</p>
     <p>These comparisons connect feeding, decomposition, and resource use in living ecosystems with the long-term history of terrestrial ecological interactions.</p>
     <div class="research-story-gallery">
-      <figure><img src="{{ '/images/herbivory%20on%20red%20mangrove.jpg' | relative_url }}" alt="Insect herbivory on a red mangrove leaf" loading="lazy"/><figcaption>Herbivory on red mangrove foliage.</figcaption></figure>
+      <figure><img src="{{ '/images/herbivory%20on%20red%20mangrove.jpg' | relative_url }}" alt="Insect herbivory on a red mangrove leaf" loading="lazy"/><figcaption>Galls and skeletonization of red mangrove foliage</figcaption></figure>
       <figure><img src="{{ '/images/mangrove%20tree.jpg' | relative_url }}" alt="Mangrove tree in a coastal ecosystem" loading="lazy"/><figcaption>Red mangrove (<em>Rhizophora mangle</em>) growing along a shallow coastal shoreline on Lower Matecumbe Key.</figcaption></figure>
     </div>
   </section>
