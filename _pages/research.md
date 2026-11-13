@@ -100,6 +100,6 @@ author_profile: false
   </section>
 
   <section class="research-story-further">
-    <p>For publications and detailed research findings, visit the <a href="{{ '/publications/' | relative_url }}">Publications page</a>.</p>
+    <p>For a list of publications, visit the <a href="{{ '/publications/' | relative_url }}">Publications page</a>.</p>
   </section>
 </div>
