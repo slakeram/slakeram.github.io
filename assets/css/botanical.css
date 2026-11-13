@@ -366,3 +366,18 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
   outline: 1px solid #8c7455;
   box-shadow: 0 5px 18px rgba(46,39,24,.2);
 }
+
+/* Film portrait: a softly rounded rectangular print rather than a circular headshot.
+   The wider frame preserves more of the candid photograph and suits the vintage palette. */
+.botanical-contact-sidebar .botanical-profile-photo-film {
+  width: 190px;
+  height: 225px;
+  max-width: 100%;
+  aspect-ratio: 19 / 22.5;
+  object-fit: cover;
+  object-position: center 43%;
+  border-radius: 12px;
+  border: 5px solid #eee3c9;
+  outline: 1px solid #8c7455;
+  box-shadow: 0 6px 20px rgba(46,39,24,.20);
+}
