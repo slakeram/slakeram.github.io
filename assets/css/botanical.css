@@ -468,3 +468,29 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
   filter:drop-shadow(0 1px 0 rgba(255,247,226,.45));
 }
 .temple-portrait-inner {z-index:1;}
+
+/* Lotus finials bloom outward from the top and bottom edges, never inward
+   across the portrait. Relief-like highlights evoke carved sandstone. */
+.temple-portrait-frame {margin-top:39px;margin-bottom:3rem;}
+.temple-lotus-finial {
+  position:absolute;
+  left:50%;
+  width:105px;
+  height:54px;
+  max-width:none;
+  z-index:5;
+  overflow:visible;
+  pointer-events:none;
+  filter:drop-shadow(0 2px 1px rgba(55,38,22,.38));
+}
+.temple-lotus-finial-top {
+  top:-46px;
+  transform:translateX(-50%);
+}
+.temple-lotus-finial-bottom {
+  bottom:-46px;
+  transform:translateX(-50%) rotate(180deg);
+}
+@media(max-width:480px) {
+  .temple-portrait-frame {margin-top:39px;margin-bottom:3rem;}
+}
