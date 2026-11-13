@@ -703,3 +703,8 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
 .coal-book-stage{width:100%;box-sizing:border-box;justify-content:center;align-items:center}
 .coal-book-enlarge{width:100%;display:flex;align-items:center;justify-content:center;margin-inline:auto}
 .coal-book-image{margin-inline:auto!important}
+
+/* Show archival plates without a separate framed backdrop or white presentation panel. */
+.coal-book-stage{background:transparent!important;border:0!important;padding:0!important;min-height:0!important}
+.coal-book-enlarge{background:transparent!important}
+.coal-book-image{background:transparent!important;box-shadow:none!important}
