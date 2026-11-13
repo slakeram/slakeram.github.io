@@ -91,7 +91,7 @@ author_profile: false
   <section aria-labelledby="modern-ecology">
     <p class="research-story-eyebrow">CONNECTING PAST AND PRESENT</p>
     <h2 id="modern-ecology">Modern ecological comparisons</h2>
-    <p>Modern ecosystems offer valuable comparisons for interpreting processes preserved in the fossil record. My ongoing research in the Florida Keys examines insect herbivory on mangrove foliage across environmental gradients. Complementary investigations in South Florida wetlands examine plant litter, arthropod activity, and organic-matter accumulation.</p>
+    <p>Modern ecosystems offer valuable comparisons for interpreting processes preserved in the fossil record. My ongoing research in the Florida Keys and Everglades examines insect herbivory on mangrove foliage across environmental gradients. Complementary investigations in South Florida wetlands examine plant litter, arthropod activity, and organic-matter accumulation.</p>
     <p>These comparisons connect feeding, decomposition, and resource use in living ecosystems with the long-term history of terrestrial ecological interactions.</p>
     <div class="research-story-gallery">
       <figure><img src="{{ '/images/herbivory%20on%20red%20mangrove.jpg' | relative_url }}" alt="Insect herbivory on a red mangrove leaf" loading="lazy"/><figcaption>Galls and skeletonization of red mangrove foliage</figcaption></figure>
