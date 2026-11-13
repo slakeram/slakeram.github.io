@@ -551,3 +551,29 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
 
 /* Darker research-page section label for contrast against the pale intro panel. */
 .kolam-research + .botanical-intro .botanical-eyebrow {color:#493b27;}
+
+/* Antique carved-wood finish for the portrait surround.
+   Fine, low-contrast grain and recessed edges retain the existing carved ornament. */
+.temple-portrait-frame {
+  background-color:#b99a72;
+  background-image:
+    repeating-linear-gradient(94deg,
+      rgba(75,46,26,.10) 0px,rgba(75,46,26,.10) 1px,
+      rgba(242,219,176,.06) 2px,transparent 5px,
+      rgba(77,48,27,.045) 9px,transparent 14px),
+    repeating-linear-gradient(2deg,
+      transparent 0px,transparent 17px,
+      rgba(77,47,28,.035) 18px,transparent 21px),
+    linear-gradient(130deg,#dfcba8 0%,#b99a72 42%,#c7a982 68%,#e2cda9 100%);
+  border-color:#725235;
+  box-shadow:
+    inset 2px 2px 2px rgba(255,239,202,.42),
+    inset -3px -3px 5px rgba(66,39,23,.25),
+    0 6px 17px rgba(45,34,23,.18);
+}
+.temple-portrait-inner {
+  box-shadow:
+    0 0 0 2px rgba(245,221,179,.38),
+    0 0 0 4px rgba(91,59,35,.19),
+    inset 0 2px 4px rgba(45,29,18,.25);
+}
