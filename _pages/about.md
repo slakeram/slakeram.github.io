@@ -24,9 +24,9 @@ redirect_from:
 
 ## About
 
-Plant–arthropod interactions influence herbivory, decomposition, and the organization of terrestrial food webs, yet how these relationships evolved remains poorly understood. My research examines how these interactions shaped organic-matter processing in peat-forming ecosystems and responded to environmental change through deep time.
+My research explores how plants and animals interacted millions of years ago during the Paleozoic and how these relationships shaped the evolution of terrestrial ecosystems. I am particularly interested in the roles of herbivory and decomposition in ancient forests, and how organisms responded to changes in their environments. By studying these interactions, I aim to better understand how ecosystems functioned in the past and what they can tell us about ecological change through time.
 
-I combine fossil evidence with modern ecological systems, comparative morphology, microscopy-based imaging, and ecological network modeling to investigate the processes that shaped ancient terrestrial communities.
+To investigate these questions, I examine fossil plants and feeding traces such as fossilized excrement to uncover evidence of ancient ecological relationships. I combine these observations with microscopy, digital imaging, and quantitative analyses to reconstruct how organisms interacted and how organic matter moved through ancient food webs. By connecting this fossil evidence with our understanding of modern ecosystems, I hope to better understand the processes that shape ecological communities and how these relationships change over time.
 
 </section>
 
