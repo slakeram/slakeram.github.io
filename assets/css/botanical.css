@@ -494,3 +494,17 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
 @media(max-width:480px) {
   .temple-portrait-frame {margin-top:39px;margin-bottom:3rem;}
 }
+
+/* Delicate, flat carved lotus accents: only a small part protrudes from the
+   beadwork border; no embossed shadows or oversized floral crowns. */
+.temple-portrait-frame {margin-top:18px;margin-bottom:1.55rem;}
+.temple-lotus-finial {
+  width:66px;
+  height:35px;
+  filter:none;
+}
+.temple-lotus-finial-top {top:-21px;}
+.temple-lotus-finial-bottom {bottom:-21px;}
+@media(max-width:480px) {
+  .temple-portrait-frame {margin-top:18px;margin-bottom:1.55rem;}
+}
