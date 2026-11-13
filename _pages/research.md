@@ -95,7 +95,7 @@ author_profile: false
     <p>These comparisons connect feeding, decomposition, and resource use in living ecosystems with the long-term history of terrestrial ecological interactions.</p>
     <div class="research-story-gallery">
       <figure><img src="{{ '/images/herbivory%20on%20red%20mangrove.jpg' | relative_url }}" alt="Insect herbivory on a red mangrove leaf" loading="lazy"/><figcaption>Herbivory on red mangrove foliage.</figcaption></figure>
-      <figure><img src="{{ '/images/mangrove%20tree.jpg' | relative_url }}" alt="Mangrove tree in a coastal ecosystem" loading="lazy"/><figcaption>Mangrove ecosystems provide modern ecological comparisons.</figcaption></figure>
+      <figure><img src="{{ '/images/mangrove%20tree.jpg' | relative_url }}" alt="Mangrove tree in a coastal ecosystem" loading="lazy"/><figcaption>Red mangrove (<em>Rhizophora mangle</em>) growing along a shallow coastal shoreline on Lower Matecumbe Key.</figcaption></figure>
     </div>
   </section>
 
