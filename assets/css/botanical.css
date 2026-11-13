@@ -454,3 +454,17 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
   .temple-portrait-frame {width:202px;padding:14px;}
   .botanical-contact-sidebar .temple-portrait-inner .botanical-profile-photo-film {height:232px;}
 }
+
+/* Raised lotus finials and carved beadwork: ornaments project beyond the
+   sandstone moulding while the photograph remains clear. */
+.temple-portrait-frame {
+  margin-top:16px;
+  margin-bottom:1.45rem;
+  overflow:visible;
+  background:linear-gradient(135deg,#e8d7b9,#cdb48d 48%,#eadbc1);
+}
+.temple-portrait-ornament {
+  overflow:visible;
+  filter:drop-shadow(0 1px 0 rgba(255,247,226,.45));
+}
+.temple-portrait-inner {z-index:1;}
