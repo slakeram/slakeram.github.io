@@ -24,16 +24,10 @@ author_profile: false
   <section aria-labelledby="fossil-evidence">
     <p class="research-story-eyebrow">THE FOSSIL EVIDENCE</p>
     <h2 id="fossil-evidence">Windows into ancient ecosystems</h2>
-    <div class="research-story-feature">
-      <div class="research-story-copy">
-        <h3>Coal balls: Preserving ancient forests</h3>
-        <p>Coal balls are mineralized masses of ancient peat that preserve plant tissues in remarkable anatomical detail. Unlike many fossils that preserve external impressions, coal balls can reveal the internal structures of roots, stems, leaves, and other plant organs.</p>
-        <p>They provide a rare glimpse into the plants that formed Pennsylvanian peat forests and the organisms that interacted with them.</p>
-      </div>
-      <figure class="research-story-note">
-        <div class="research-story-fossil-symbol" aria-hidden="true"><span></span><span></span><span></span></div>
-        <figcaption>Coal ball specimen or anatomical peel image to be added.</figcaption>
-      </figure>
+    <div class="research-story-copy">
+      <h3>Coal balls: Preserving ancient forests</h3>
+      <p>Coal balls formed when mineral-rich water entered ancient peat deposits and minerals, commonly calcium carbonate, precipitated around buried plant material. This early mineralization preserved delicate tissues before they were compacted and altered during coal formation.</p>
+      <p>As a result, coal balls can preserve roots, stems, leaves, and other plant organs in remarkable anatomical detail. They provide a rare glimpse into the plants of Pennsylvanian peat forests and the organisms that interacted with them.</p>
     </div>
     <div class="research-story-feature research-story-feature-reverse">
       <div class="research-story-copy">
