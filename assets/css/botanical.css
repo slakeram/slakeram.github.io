@@ -306,3 +306,17 @@ body:has(.botanical-hero) .page__title {display:none;}
 @media(max-width:760px){
   .botanical-hero .botanical-hero-focus {max-width:100%;}
 }
+
+/* Give the homepage portrait breathing room below the masthead. */
+body:has(.botanical-hero) .botanical-contact-sidebar {
+  padding-top: 1.7rem;
+}
+body:has(.botanical-hero) .botanical-profile-photo {
+  margin-top: .7rem;
+}
+
+/* Hide the redundant hamburger when all navigation links fit.
+   Keep it on narrow screens so the menu remains accessible. */
+@media (min-width: 900px) {
+  .greedy-nav > button { display: none !important; }
+}
