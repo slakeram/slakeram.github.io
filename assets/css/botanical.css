@@ -357,3 +357,13 @@ body:has(.botanical-hero) .botanical-profile-photo {
 
 /* CV identity heading aligns with the left edge of the section headings and content. */
 body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem!important;padding:0!important;font-family:Georgia,serif;color:#244735;line-height:1.2;}
+
+/* Film portrait: preserve the candid framing while rotating the upside-down original
+   for an upright, face-focused circular sidebar crop. */
+.botanical-contact-sidebar .botanical-profile-photo-film {
+  object-position: center 40%;
+  transform: rotate(180deg);
+  border: 5px solid #eee3c9;
+  outline: 1px solid #8c7455;
+  box-shadow: 0 5px 18px rgba(46,39,24,.2);
+}
