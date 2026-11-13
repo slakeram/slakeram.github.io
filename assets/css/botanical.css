@@ -548,3 +548,6 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
 .research-story-coprolite-gallery img{display:block;width:100%;height:auto!important;max-height:430px;object-fit:contain!important;object-position:center;background:#f5f1e7}
 .research-story-coprolite-gallery figcaption{margin-top:.75rem}
 @media(max-width:720px){.research-story-coprolite-gallery{grid-template-columns:1fr;gap:1.75rem}.research-story-coprolite-gallery img{max-height:none}}
+
+/* Darker research-page section label for contrast against the pale intro panel. */
+.kolam-research + .botanical-intro .botanical-eyebrow {color:#493b27;}
