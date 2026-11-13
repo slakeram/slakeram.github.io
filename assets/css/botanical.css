@@ -697,3 +697,9 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
 .coal-book-credit{text-align:center;color:#6a5a46;font-size:.78rem;margin:.8rem 0 0!important}
 @media(max-width:600px){.coal-book-gallery{padding:.8rem}.coal-book-stage{padding:.5rem;min-height:180px}.coal-book-controls button{padding:.55rem .6rem}.coal-book-count{font-size:.76rem}}
 @media(prefers-reduced-motion:reduce){.coal-book-image{animation:none!important;transition:none!important}}
+
+/* Center the archival book reader and its image within the research content. */
+.research-story .coal-book-gallery{box-sizing:border-box;width:min(100%,800px);margin-left:auto!important;margin-right:auto!important;float:none;clear:both}
+.coal-book-stage{width:100%;box-sizing:border-box;justify-content:center;align-items:center}
+.coal-book-enlarge{width:100%;display:flex;align-items:center;justify-content:center;margin-inline:auto}
+.coal-book-image{margin-inline:auto!important}
