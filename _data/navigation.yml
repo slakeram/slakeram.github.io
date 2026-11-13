@@ -9,3 +9,5 @@ main:
     url: /publications/
   - title: "CV"
     url: /cv/
+  - title: "Game"
+    url: /snakes-and-ladders/
