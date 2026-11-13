@@ -232,12 +232,15 @@ body:has(.kolam-page-marker) .masthead::after {
   left:0;right:0;
   height:100px;
   background-color:#f4eee0;
-  background-image:var(--kolam-horizontal);
-  background-position:center center;
-  background-repeat:repeat-x;
-  background-size:auto 100px;
-  border-top:2px solid #3f2418;
-  border-bottom:none;
+  /* The rules are drawn once across the full viewport, not in every tile. */
+  background-image:
+    linear-gradient(#3f2418,#3f2418),
+    linear-gradient(#3f2418,#3f2418),
+    var(--kolam-horizontal);
+  background-position:center 12px, center 87px, center center;
+  background-repeat:no-repeat,no-repeat,repeat-x;
+  background-size:100% 1.5px,100% 1px,auto 100px;
+  border:0;
   box-sizing:border-box;
   pointer-events:none;
 }
@@ -249,7 +252,8 @@ body:has(.kolam-cv) {--kolam-horizontal:url("/images/kolam-cv-horizontal.svg");}
   body:has(.kolam-page-marker) .masthead {margin-bottom:83px;}
   body:has(.kolam-page-marker) .masthead::after {
     height:72px;
-    background-size:auto 72px;
+    background-size:100% 1.5px,100% 1px,auto 72px;
+    background-position:center 9px,center 63px,center center;
   }
 }
 /* The navigation bar stays a consistent soft sage, including every link. */
