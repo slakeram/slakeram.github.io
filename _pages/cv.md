@@ -7,9 +7,7 @@ author_profile: false
 
 <div class="kolam-page-marker kolam-cv" aria-hidden="true"></div>
 
-# Scott Lakeram, Ph.D.
-
-**Research Associate**, Smithsonian National Museum of Natural History
+<h1 class="cv-person-name">Scott Lakeram, Ph.D.</h1>
 
 ## Education
 
@@ -27,6 +25,3 @@ author_profile: false
 
 Plant–arthropod interactions; paleoecology; Pennsylvanian peat forests; arthropod feeding traces; terrestrial food webs; mangrove ecology; fossil imaging and collections.
 
-## Complete CV
-
-A downloadable PDF will be added here before launch. In the meantime, see the [Publications](/publications/), [Research](/research/), and [Teaching](/teaching/) pages.
