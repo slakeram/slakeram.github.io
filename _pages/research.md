@@ -38,10 +38,10 @@ author_profile: false
       <div class="research-story-gallery research-story-coprolite-gallery">
         <figure>
           <img src="{{ '/images/cordaite%20wood%20copro%20mite.png' | relative_url }}" alt="Fossil coprolite and associated mite in cordaite wood" loading="lazy"/>
-          <figcaption>Coprolite and associated arthropod evidence preserved in cordaite wood.</figcaption>
+          <figcaption>Coprolites attributed to oribatid mites preserved within borings in Cordaites wood..</figcaption>
         </figure>
         <figure>
-          <img src="{{ '/images/Convolutispora%20matrix%20coprolite.png' | relative_url }}" alt="Coprolite preserved within a Convolutispora matrix" loading="lazy"/>
+          <img src="{{ '/images/Convolutispora%20matrix%20coprolite.png' | relative_url }}" alt="A coprolite (indicated by a pink arrow) containing spores from _Psaronius_ tree ferns (_Convolutispora_) occurring in the peat matrix" loading="lazy"/>
           <figcaption>Coprolite preserved in a <em>Convolutispora</em> matrix.</figcaption>
         </figure>
       </div>
@@ -99,9 +99,7 @@ author_profile: false
     </div>
   </section>
 
-  <section class="research-story-further" aria-labelledby="further-reading">
-    <p class="research-story-eyebrow">FURTHER READING</p>
-    <h2 id="further-reading">Explore the research</h2>
+  <section class="research-story-further">
     <p>For publications and detailed research findings, visit the <a href="{{ '/publications/' | relative_url }}">Publications page</a>.</p>
   </section>
 </div>
