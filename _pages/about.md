@@ -41,22 +41,3 @@ To investigate these questions, I examine fossil plants and feeding traces such 
 </div>
 
 </section>
-
-<section class="botanical-content-panel" markdown="1">
-
-## Research and teaching
-
-My work connects Pennsylvanian coal ball assemblages with living wetlands, including mangrove forests in the Florida Keys and South Florida wetlands. In teaching, I emphasize active inquiry, field observations, evidence-based reasoning, and student-centered mentorship.
-
-[Read about my teaching →](/teaching/) · [Browse publications →](/publications/)
-
-</section>
-
-<section class="botanical-content-panel" markdown="1">
-
-## Academic profiles and CV
-
-[**Curriculum vitae →**](/cv/) · [**Google Scholar →**](https://scholar.google.com/citations?user=Y9aaMxQAAAAJ&hl=en) · [**Email →**](mailto:lakerams@si.edu)
-
-</section>
-
