@@ -671,3 +671,29 @@ body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem
     background:#e2dac7;
   }
 }
+
+
+/* Phillips Coal Ball Collection: interactive archival plate reader. */
+.coal-book-gallery{max-width:800px;margin:2rem auto 2.6rem;padding:1.4rem;background:#f3eddf;border:1px solid #c9b99c;border-radius:10px;box-shadow:0 5px 20px rgba(58,43,27,.08)}
+.coal-book-heading{text-align:center;margin-bottom:1rem}
+.coal-book-heading h4{font-family:Georgia,serif;color:#244735;font-size:1.4rem;margin:.3rem 0 .7rem}
+.coal-book-heading p:last-child{max-width:610px;margin:0 auto;color:#514735;font-size:.95rem}
+.coal-book-figure{margin:0!important}
+.coal-book-stage{display:flex;align-items:center;justify-content:center;min-height:280px;padding:1rem;background:#dfd3bb;border:1px solid #c8b99e;border-radius:6px;overflow:hidden}
+.coal-book-enlarge{display:block;max-width:100%;text-align:center;perspective:1400px}
+.coal-book-image{display:block;width:auto;max-width:100%;max-height:660px;height:auto;margin:auto;object-fit:contain;box-shadow:4px 5px 14px rgba(49,36,24,.17);transform-origin:left center;backface-visibility:hidden}
+.coal-book-image.coal-book-turn-next{animation:coal-book-out-next .36s ease-in forwards}
+.coal-book-image.coal-book-turn-prev{animation:coal-book-out-prev .36s ease-in forwards}
+.coal-book-image.coal-book-arrive{animation:coal-book-in .36s ease-out both}
+@keyframes coal-book-out-next{to{transform:rotateY(-65deg);opacity:.18}}
+@keyframes coal-book-out-prev{to{transform:rotateY(65deg);opacity:.18}}
+@keyframes coal-book-in{from{transform:rotateY(32deg);opacity:.2}to{transform:rotateY(0);opacity:1}}
+.coal-book-caption{text-align:center;font-size:.84rem;color:#5c4e3b;margin:.8rem 0!important}
+.coal-book-controls{display:flex;justify-content:space-between;align-items:center;gap:.7rem;margin:1rem 0}
+.coal-book-controls button{background:#244735;color:#fff;border:1px solid #244735;border-radius:5px;padding:.65rem .9rem;cursor:pointer;font-weight:650}
+.coal-book-controls button:hover:not(:disabled),.coal-book-controls button:focus-visible{background:#3b624a}
+.coal-book-controls button:disabled{opacity:.4;cursor:not-allowed}
+.coal-book-count{color:#534531;font-size:.86rem;text-align:center}
+.coal-book-credit{text-align:center;color:#6a5a46;font-size:.78rem;margin:.8rem 0 0!important}
+@media(max-width:600px){.coal-book-gallery{padding:.8rem}.coal-book-stage{padding:.5rem;min-height:180px}.coal-book-controls button{padding:.55rem .6rem}.coal-book-count{font-size:.76rem}}
+@media(prefers-reduced-motion:reduce){.coal-book-image{animation:none!important;transition:none!important}}
