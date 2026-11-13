@@ -38,11 +38,11 @@ author_profile: false
       <div class="research-story-gallery research-story-coprolite-gallery">
         <figure>
           <img src="{{ '/images/cordaite%20wood%20copro%20mite.png' | relative_url }}" alt="Fossil coprolite and associated mite in cordaite wood" loading="lazy"/>
-          <figcaption>Coprolites attributed to oribatid mites preserved within borings in Cordaites wood..</figcaption>
+          <figcaption>Coprolites (indicated by the pink arrows) attributed to oribatid mites preserved within borings in Cordaites wood.</figcaption>
         </figure>
         <figure>
           <img src="{{ '/images/Convolutispora%20matrix%20coprolite.png' | relative_url }}" alt="A coprolite (indicated by a pink arrow) containing spores from _Psaronius_ tree ferns (_Convolutispora_) occurring in the peat matrix" loading="lazy"/>
-          <figcaption>Coprolite preserved in a <em>Convolutispora</em> matrix.</figcaption>
+          <figcaption>A coprolite (indicated by a pink arrow) containing spores from _Psaronius_ tree ferns (_Convolutispora_) occurring in the peat matrix.</figcaption>
         </figure>
       </div>
     </div>
