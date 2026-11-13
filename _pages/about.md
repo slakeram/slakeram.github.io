@@ -38,3 +38,12 @@ To investigate these questions, I examine fossil plants and feeding traces such 
 </div>
 
 </section>
+
+<section class="botanical-content-panel botanical-media-coverage" markdown="1">
+
+## Media Coverage
+
+- **Smithsonian Magazine** (March 6, 2025) — [Meet the Scientist Studying Fossil Snapshots of Ancient Insect Life](https://www.smithsonianmag.com/blogs/national-museum-of-natural-history/2025/03/06/meet-the-scientist-studying-fossil-snapshots-of-ancient-insect-life/)
+- **University of Illinois Urbana–Champaign** — [Watch the video on YouTube](https://www.youtube.com/watch?v=QH5GECWea8w)
+
+</section>
