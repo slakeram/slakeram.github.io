@@ -189,8 +189,8 @@ author_profile: false
   <section aria-labelledby="modern-ecology">
     <p class="research-story-eyebrow">CONNECTING PAST AND PRESENT</p>
     <h2 id="modern-ecology">Modern ecological comparisons</h2>
-    <p>Modern ecosystems offer valuable comparisons for interpreting processes preserved in the fossil record. My ongoing research in the Florida Keys and Everglades examines insect herbivory on mangrove foliage across environmental gradients. Complementary investigations in South Florida wetlands examine plant litter, arthropod activity, and organic-matter accumulation.</p>
-    <p>These comparisons connect feeding, decomposition, and resource use in living ecosystems with the long-term history of terrestrial ecological interactions.</p>
+    <p>Modern ecosystems provide valuable comparisons for interpreting ecological processes preserved in the fossil record. My ongoing research in the Florida Keys examines insect herbivory on mangrove foliage across environmental gradients. Complementary work in South Florida wetlands investigates how plant litter, arthropod activity, and environmental conditions influence organic-matter accumulation and decomposition.</p>
+    <p>These comparisons help us better understand how feeding, decomposition, and resource use shaped ancient ecosystems and how these ecological relationships changed through time.</p>
     <div class="research-story-gallery">
       <figure><img src="{{ '/images/herbivory%20on%20red%20mangrove.jpg' | relative_url }}" alt="Insect herbivory on a red mangrove leaf" loading="lazy"/><figcaption>Galls and skeletonization of red mangrove foliage</figcaption></figure>
       <figure><img src="{{ '/images/mangrove%20tree.jpg' | relative_url }}" alt="Mangrove tree in a coastal ecosystem" loading="lazy"/><figcaption>Red mangrove (<em>Rhizophora mangle</em>) growing along a shallow coastal shoreline on Lower Matecumbe Key.</figcaption></figure>
