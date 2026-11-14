@@ -149,11 +149,11 @@ author_profile: false
   <section aria-labelledby="network-explainer">
     <p class="research-story-eyebrow">FROM FOSSILS TO ECOLOGY</p>
     <h2 id="network-explainer">Reconstructing ancient food webs</h2>
-    <p>Fossils preserve more than individual organisms. They can also provide evidence of the relationships between them. Identifying plant tissues within different coprolite morphotypes helps reveal which resources were consumed and how they were used.</p>
-    <p>Bipartite networks help visualize associations between coprolite types and plant resources. These patterns provide a framework for examining resource use, feeding specialization, and the organization of ancient food webs. Potential arthropod producers are inferred from the fossil evidence rather than always directly identified.</p>
+    <p>Coprolites and other trace fossils provide evidence of feeding relationships between arthropods and plants in ancient ecosystems. Identifying plant tissues within different coprolite morphotypes helps determine which resources were consumed and reveals patterns of resource use.</p>
+    <p>Bipartite networks illustrate relationships between two distinct groups. In my research, these networks connect coprolite morphotypes with the plant resources identified within them. By examining these associations, I investigate patterns of feeding specialization, resource partitioning, and the structure of ancient food webs. Comparisons between fossil coprolites and fecal pellets produced by modern arthropods also help infer the identities of potential producers.</p>
     <figure class="research-story-network">
       <img src="{{ '/images/coprolite_network_diagram.svg' | relative_url }}" alt="Simplified schematic connecting potential arthropod producers to coprolite morphotypes or damage types and plant resources" loading="lazy"/>
-      <figcaption>Simplified illustration of how fossil feeding evidence can inform food-web reconstruction. Connections are conceptual, not plotted research data.</figcaption>
+      <figcaption>A simplified illustration of how fossil feeding evidence can inform food-web reconstruction.</figcaption>
     </figure>
   </section>
 
