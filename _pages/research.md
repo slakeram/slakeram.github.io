@@ -165,7 +165,7 @@ author_profile: false
       <span class="research-story-number">01</span>
       <div>
         <h3>How did arthropods contribute to decomposition in ancient forests?</h3>
-        <p>Decomposition is essential to the recycling of organic material, yet the role of arthropods in this process remains poorly understood in ancient peat-forming environments. Coprolites, borings, and other feeding traces provide evidence of how arthropods consumed and processed plant material before burial.</p>
+        <p>Decomposition plays an important role in nutrient cycling and organic-matter accumulation, yet the contributions of arthropods in ancient peat-forming ecosystems remain poorly understood. Comparisons with modern wetlands help reveal how arthropod activity influences plant-litter breakdown and peat accumulation.</p>
       </div>
     </article>
 
@@ -173,15 +173,15 @@ author_profile: false
       <span class="research-story-number">02</span>
       <div>
         <h3>How did arthropods share plant resources in ancient food webs?</h3>
-        <p>Not all organisms consume the same resources. Plant tissues preserved within different coprolite morphotypes reveal patterns of resource use and potential feeding specialization. Comparing these associations across fossil assemblages helps reveal how feeding relationships changed as ancient forests evolved.</p>
+        <p>Different arthropods utilize different plant resources, influencing feeding specialization and the organization of food webs. Comparing fossil feeding associations with those of living arthropods helps reveal how resources were partitioned within ancient ecosystems.</p>
       </div>
     </article>
 
     <article class="research-story-question" id="change">
       <span class="research-story-number">03</span>
       <div>
-        <h3>How did ancient food webs respond to environmental change?</h3>
-        <p>Environmental change can alter not only which organisms inhabit an ecosystem, but also how they interact. Comparisons of fossil plants and feeding traces across environmental transitions, including the Middle–Late Pennsylvanian Floral Transition, help reveal how ecological interactions reorganized during disruption and recovery.</p>
+        <h3>How do food webs respond to environmental change?</h3>
+        <p>EChanges in vegetation can alter the resources available to arthropods and their feeding relationships. Examining the Middle–Late Pennsylvanian Floral Transition and glaciation cycles alongside modern ecosystems helps investigate how food webs respond to shifts in plant communities and environmental conditions.</p>
       </div>
     </article>
   </section>
