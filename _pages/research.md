@@ -1,0 +1,203 @@
+---
+layout: single
+title: ""
+permalink: /research/
+author_profile: false
+---
+
+<div class="kolam-page-marker kolam-research" aria-hidden="true"></div>
+
+<div class="botanical-intro">
+  <p class="botanical-eyebrow">RESEARCH PROGRAM</p>
+  <h1>Reconstructing the ecological interactions of ancient forests</h1>
+  <p>Plant–arthropod interactions and the evolution of terrestrial ecosystems across deep time.</p>
+</div>
+
+<div class="research-story">
+
+  <section class="research-story-opening" aria-labelledby="research-intro">
+    <h2 id="research-intro">Understanding ancient ecosystems</h2>
+    <p>Plants and arthropods have shaped terrestrial ecosystems for hundreds of millions of years. Through feeding and decomposition, their interactions influence how ecosystems function and respond to environmental change. Yet the early evolutionary history of these ecological relationships remains poorly understood. Trace fossils, which preserve evidence of an organism's activity rather than its physical remains, offer a way to investigate these ancient interactions.</p>
+    <p>Fossil feeding traces from Pennsylvanian coal balls provide evidence of how arthropods utilized plant resources. By examining these traces alongside modern ecological systems, my research investigates the ecological roles of arthropods, the structure of ancient food webs, and how patterns of resource use changed through time.</p>
+  </section>
+
+  <section aria-labelledby="fossil-evidence">
+    <h2 id="fossil-evidence">Windows into ancient ecosystems</h2>
+    <div class="research-story-copy">
+      <h3>Coal balls: Preserving ancient forests</h3>
+      <p>Coal balls are mineralized masses found within coal seams, primarily from the Carboniferous and Permian periods. They formed when mineral-rich water infiltrated ancient peat deposits, causing minerals such as calcium carbonate to precipitate around buried plant tissues. This process preserved delicate plant structures before they were compacted during coal formation.</p>
+      <p>Coal balls preserve roots, stems, leaves, and other plant organs at cellular resolution. They can also preserve evidence of arthropod feeding activity within plant tissues. Unlike many other plant fossils, which primarily preserve external features, coal balls reveal internal anatomy in exceptional detail. This unique preservation provides insight into the vegetation of Pennsylvanian peat forests and the ecological interactions within these ancient ecosystems.</p>
+    </div>
+    <div class="coal-book-gallery" data-coal-book-gallery aria-label="Phillips Coal Ball Collection image gallery">
+      <div class="coal-book-heading">
+        <p class="research-story-eyebrow">
+        <h4>Plant anatomy in Coal Ball</h4>
+      </div>
+      <figure class="coal-book-figure">
+        <div class="coal-book-stage">
+          <a class="coal-book-enlarge" href="{{ '/images/TC-Ferns%20page%201.jpeg' | relative_url }}" target="_blank" rel="noopener" aria-label="Open current archival plate at full resolution">
+            <img class="coal-book-image" src="{{ '/images/coal-ball-plate-1-web.jpg' | relative_url }}" alt="Archival coal-ball plate 1 of 5, examples 1–3, Phillips Coal Ball Collection" loading="eager" decoding="async">
+          </a>
+        </div>
+        <figcaption class="coal-book-caption">Material from the Phillips Coal Ball Collection.</figcaption>
+      </figure>
+      <nav class="coal-book-controls" aria-label="Navigate archival plates">
+        <button class="coal-book-prev" type="button" aria-label="Previous plate">← Previous</button>
+        <span class="coal-book-count" role="status" aria-live="polite">Plate 1</span>
+        <button class="coal-book-next" type="button" aria-label="Next plate">Next →</button>
+      </nav>
+    </div>
+    <script>
+    (function () {
+      const root = document.querySelector('[data-coal-book-gallery]');
+      if (!root) return;
+      const base = {{ '/images/' | relative_url | jsonify }};
+      const pages = [
+        ['TC-Ferns page 1.jpeg', '1–3'],
+        ['TC-Ferns page 2jpeg.jpeg', '4–5'],
+        ['TC-Ferns page 3.jpeg', '6–7'],
+        ['TC-Ferns page 4.jpeg', '8–9'],
+        ['TC-Ferns page 5.jpeg', '10']
+      ];
+      const cached = new Map();
+      function pageUrl(i) { return base + encodeURIComponent(pages[i][0]); }
+      function previewUrl(i) { return base + 'coal-ball-plate-' + (i + 1) + '-web.jpg'; }
+      function preload(i) {
+        const position = (i + pages.length) % pages.length;
+        if (cached.has(position)) return cached.get(position);
+        const img = new Image();
+        const promise = new Promise(function (resolve, reject) {
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+        img.src = previewUrl(position);
+        cached.set(position, promise);
+        return promise;
+      }
+      let index = 0;
+      let busy = false;
+      const image = root.querySelector('.coal-book-image');
+      const link = root.querySelector('.coal-book-enlarge');
+      const count = root.querySelector('.coal-book-count');
+      const prev = root.querySelector('.coal-book-prev');
+      const next = root.querySelector('.coal-book-next');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      function updateButtons() {
+        prev.disabled = busy;
+        next.disabled = busy;
+      }
+      function showPage(direction) {
+        const target = (index + direction + pages.length) % pages.length;
+        if (busy) return;
+        busy = true;
+        updateButtons();
+        const file = pages[target][0];
+        const url = previewUrl(target);
+        preload(target).then(function () {
+          const animate = !reduceMotion.matches;
+          if (animate) image.classList.add(direction > 0 ? 'coal-book-turn-next' : 'coal-book-turn-prev');
+          window.setTimeout(function () {
+            index = target;
+            image.src = url;
+            image.alt = 'Archival coal-ball plate ' + (index + 1) + ' of 5, examples ' + pages[index][1] + ', Phillips Coal Ball Collection';
+            link.href = pageUrl(index);
+            count.textContent = 'Plate ' + (index + 1);
+            image.classList.remove('coal-book-turn-next', 'coal-book-turn-prev');
+            if (animate) {
+              image.classList.add('coal-book-arrive');
+              window.setTimeout(function () { image.classList.remove('coal-book-arrive'); busy = false; updateButtons(); }, 360);
+            } else { busy = false; updateButtons(); }
+            preload((index + 1) % pages.length).catch(function () {});
+            preload((index - 1 + pages.length) % pages.length).catch(function () {});
+          }, animate ? 360 : 0);
+        }).catch(function () {
+          busy = false;
+          updateButtons();
+          count.textContent = 'Plate image unavailable; please check the uploaded filename.';
+        });
+      }
+      prev.addEventListener('click', function () { showPage(-1); });
+      next.addEventListener('click', function () { showPage(1); });
+      root.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowLeft') { event.preventDefault(); showPage(-1); }
+        if (event.key === 'ArrowRight') { event.preventDefault(); showPage(1); }
+      });
+      updateButtons();
+      preload(1).catch(function () {});
+      preload(pages.length - 1).catch(function () {});
+    }());
+    </script>
+    <div class="research-story-coprolites">
+      <div class="research-story-copy">
+        <h3>Coprolites: Evidence of ancient feeding</h3>
+    <p>Coprolites are fossilized fecal material that preserve evidence of what ancient organisms consumed. Commonly found within coal balls, their shapes, distribution, and contents provide clues about feeding behavior that would otherwise be difficult to recognize in the fossil record.</p>
+    <p>These fossils are particularly valuable for studying small arthropods whose bodies are rarely preserved in coal balls. To better understand their ecological roles, I have examined more than 6,000 coprolites and developed a systematic framework encompassing 26 morphotypes. This data set provides insight into patterns of herbivory, detritivory, and resource allocation in Pennsylvanian peat forests.</p>
+      </div>
+      <div class="research-story-gallery research-story-coprolite-gallery">
+        <figure>
+          <img src="{{ '/images/cordaite%20wood%20copro%20mite.png' | relative_url }}" alt="Fossil coprolite and associated mite in cordaite wood" loading="lazy"/>
+          <figcaption>Coprolites attributed to oribatid mites (pink arrows) preserved within borings in *Cordaites* wood.</figcaption>
+        </figure>
+        <figure>
+          <img src="{{ '/images/Convolutispora%20matrix%20coprolite.png' | relative_url }}" alt="A coprolite indicated by a pink arrow containing spores from Psaronius tree ferns, Convolutispora, occurring in the peat matrix" loading="lazy"/>
+          <figcaption>A coprolite (pink arrow) containing *Convolutispora* spores, attributed to *Psaronius* tree ferns, preserved within the peat matrix.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="network-explainer">
+    <p class="research-story-eyebrow">FROM FOSSILS TO ECOLOGY</p>
+    <h2 id="network-explainer">Reconstructing ancient food webs</h2>
+    <p>Coprolites and other trace fossils provide evidence of feeding relationships between arthropods and plants in ancient ecosystems. Identifying plant tissues within different coprolite morphotypes helps determine which resources were consumed and reveals patterns of resource use.</p>
+    <p>Bipartite networks illustrate relationships between two distinct groups. In my research, these networks connect coprolite morphotypes with the plant resources identified within them. By examining these associations, I investigate patterns of feeding specialization, resource partitioning, and the structure of ancient food webs. Comparisons between fossil coprolites and fecal pellets produced by modern arthropods also help infer the identities of potential producers.</p>
+    <figure class="research-story-network">
+      <img src="{{ '/images/coprolite_network_diagram.svg' | relative_url }}" alt="Simplified schematic connecting potential arthropod producers to coprolite morphotypes or damage types and plant resources" loading="lazy"/>
+      <figcaption>A simplified illustration of how fossil feeding evidence can inform food-web reconstruction.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="research-questions">
+    <p class="research-story-eyebrow">RESEARCH QUESTIONS</p>
+    <h2 id="research-questions">Three central research questions</h2>
+
+    <article class="research-story-question" id="decomposition">
+      <span class="research-story-number">01</span>
+      <div>
+        <h3>How do arthropods contribute to decomposition in forests?</h3>
+        <p>Decomposition plays an important role in nutrient cycling and organic-matter accumulation, yet the contributions of arthropods in ancient peat-forming ecosystems remain poorly understood. Comparisons with modern wetlands help reveal how arthropod activity influences plant-litter breakdown and peat accumulation.</p>
+      </div>
+    </article>
+
+    <article class="research-story-question" id="specialization">
+      <span class="research-story-number">02</span>
+      <div>
+        <h3>How does resource partitioning shape food webs?</h3>
+        <p>Different arthropods utilize different plant resources, influencing feeding specialization and the organization of food webs. Comparing fossil feeding associations with those of living arthropods helps reveal how resources were partitioned within ancient ecosystems.</p>
+      </div>
+    </article>
+
+    <article class="research-story-question" id="change">
+      <span class="research-story-number">03</span>
+      <div>
+        <h3>How does environmental change restructure food webs?</h3>
+        <p>Changes in vegetation can alter the resources available to arthropods and their feeding relationships. Examining the Middle–Late Pennsylvanian Floral Transition and glaciation cycles alongside modern ecosystems helps investigate how food webs respond to shifts in plant communities and environmental conditions.</p>
+      </div>
+    </article>
+  </section>
+
+  <section aria-labelledby="modern-ecology">
+    <p class="research-story-eyebrow">CONNECTING PAST AND PRESENT</p>
+    <h2 id="modern-ecology">Modern ecological comparisons</h2>
+    <p>Modern ecosystems provide valuable comparisons for interpreting ecological processes preserved in the fossil record. My ongoing research in the Florida Keys examines insect herbivory on mangrove foliage across environmental gradients. Complementary work in South Florida wetlands investigates how plant litter, arthropod activity, and environmental conditions influence organic-matter accumulation and decomposition. Together, these projects connect observations of living ecosystems with the ecological relationships preserved in ancient peat forests.
+</p>
+    <div class="research-story-gallery">
+      <figure><img src="{{ '/images/herbivory%20on%20red%20mangrove.jpg' | relative_url }}" alt="Insect herbivory on a red mangrove leaf" loading="lazy"/><figcaption>Galls and skeletonization of red mangrove foliage</figcaption></figure>
+      <figure><img src="{{ '/images/mangrove%20tree.jpg' | relative_url }}" alt="Mangrove tree in a coastal ecosystem" loading="lazy"/><figcaption>Red mangrove (<em>Rhizophora mangle</em>) growing along a shallow coastal shoreline on Lower Matecumbe Key.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="research-story-further">
+    <p>For a list of publications, visit the <a href="{{ '/publications/' | relative_url }}">Publications page</a>.</p>
+  </section>
+</div>

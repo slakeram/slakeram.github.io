@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="660" viewBox="0 0 1400 660" role="img" aria-labelledby="title desc">
+<title id="title">Coprolite morphotype or damage type network diagram</title>
+<desc id="desc">Three rows show potential arthropod producers, four coprolite morphotypes or damage types, and four plant resources, connected by colored lines.</desc>
+<rect width="1400" height="660" fill="#fffdf8"/>
+<style>
+ text{font-family:Arial,Helvetica,sans-serif;fill:#273427} .heading{font-size:24px;font-weight:bold} .node-label{font-size:22px;font-weight:bold} .resource-label{font-size:21px} .arth-box,.resource-box{fill:#faf6eb;stroke:#6b604b;stroke-width:1.7} .connection{fill:none;stroke-width:2.5;opacity:.85} .symbol{stroke:none}
+</style>
+<!-- left labels only, no explanatory text -->
+<text x="34" y="116" class="heading">Potential Arthropod</text><text x="34" y="146" class="heading">Producers</text>
+<text x="34" y="316" class="heading">Coprolite Morphotype</text><text x="34" y="346" class="heading">or Damage Type</text>
+<text x="34" y="554" class="heading">Plant Resources</text>
+<!-- producer boxes -->
+<g>
+ <rect class="arth-box" x="360" y="60" width="130" height="120" rx="8"/><rect class="arth-box" x="540" y="60" width="130" height="120" rx="8"/><rect class="arth-box" x="720" y="60" width="130" height="120" rx="8"/><rect class="arth-box" x="900" y="60" width="130" height="120" rx="8"/><rect class="arth-box" x="1080" y="60" width="130" height="120" rx="8"/>
+ <text x="425" y="92" text-anchor="middle" class="node-label">A</text><text x="605" y="92" text-anchor="middle" class="node-label">B</text><text x="785" y="92" text-anchor="middle" class="node-label">C</text><text x="965" y="92" text-anchor="middle" class="node-label">D</text><text x="1145" y="92" text-anchor="middle" class="node-label">E</text>
+</g>
+<!-- very simple abstract arthropod glyphs -->
+<g fill="#77715b" stroke="#77715b" stroke-width="3" stroke-linecap="round">
+ <g transform="translate(425 132)"><rect x="-32" y="-9" width="64" height="18" rx="9"/><circle cx="-30" cy="0" r="10"/><path d="M-20 -9l-7 -12 M0 -9l-5 -12 M20 -9l4 -12 M-20 9l-7 12 M0 9l-5 12 M20 9l4 12" fill="none"/></g>
+ <g transform="translate(605 132)"><ellipse rx="23" ry="17"/><circle cx="-24" cy="0" r="10"/><path d="M-12 -15l-15 -13 M5 -16l7 -14 M20 -10l17 -10 M-12 15l-15 13 M5 16l7 14 M20 10l17 10" fill="none"/></g>
+ <g transform="translate(785 132)"><ellipse rx="8" ry="25"/><ellipse cx="-20" cy="-8" rx="22" ry="9" transform="rotate(25 -20 -8)" fill="#c0b69b"/><ellipse cx="20" cy="-8" rx="22" ry="9" transform="rotate(-25 20 -8)" fill="#c0b69b"/><path d="M-8 5l-16 14 M8 5l16 14 M-4 -23l-10 -10 M4 -23l10 -10" fill="none"/></g>
+ <g transform="translate(965 132)"><rect x="-29" y="-9" width="58" height="18" rx="9"/><circle cx="29" cy="0" r="9"/><path d="M-20 -9l-5 -12 M0 -9l-5 -12 M20 -9l-5 -12 M-20 9l-5 12 M0 9l-5 12 M20 9l-5 12" fill="none"/></g>
+ <g transform="translate(1145 132)"><ellipse rx="22" ry="15"/><circle cx="-20" cy="0" r="9"/><path d="M-12 -12l-15 -13 M9 -13l12 -15 M-12 12l-15 13 M9 13l12 15" fill="none"/></g>
+</g>
+<!-- producer to coprolite inferred associations -->
+<g stroke="#77715b" stroke-width="2" fill="none"><path d="M425 180L485 278 M605 180L485 278 M785 180L755 278 M965 180L1025 278 M1145 180L1205 278"/></g>
+<!-- coprolite/damage type nodes -->
+<circle cx="485" cy="310" r="30" fill="#999999"/>
+<path d="M755 276 L789 335 L721 335Z" fill="#7a9b65"/>
+<path d="M1025 274 L1060 299 L1047 340 L1003 340 L990 299Z" fill="#b45d4d"/>
+<rect x="1176" y="282" width="58" height="56" rx="4" fill="#4579b3"/>
+<!-- network edges, intentionally limited and clear -->
+<g class="connection"><path d="M485 340L430 495 M485 340L675 495" stroke="#999999"/><path d="M755 335L430 495 M755 335L925 495" stroke="#7a9b65"/><path d="M1025 340L675 495 M1025 340L1175 495" stroke="#b45d4d"/><path d="M1205 338L925 495 M1205 338L1175 495" stroke="#4579b3"/></g>
+<!-- plant resource boxes -->
+<g><rect class="resource-box" x="350" y="495" width="160" height="128" rx="7"/><rect class="resource-box" x="595" y="495" width="160" height="128" rx="7"/><rect class="resource-box" x="845" y="495" width="160" height="128" rx="7"/><rect class="resource-box" x="1095" y="495" width="160" height="128" rx="7"/></g>
+<!-- simplified plant glyphs -->
+<g stroke="#6d7954" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M399 567Q395 522 463 519Q462 561 399 567Z" fill="#8ea678"/><path d="M399 567L455 526" fill="none"/>
+ <path d="M636 560L712 523" stroke="#758956" stroke-width="15"/><path d="M636 560L712 523" stroke="#a9b88b" stroke-width="7"/>
+ <circle cx="925" cy="540" r="31" fill="#b8a587" stroke="#84735c"/><circle cx="925" cy="540" r="21" fill="none" stroke="#84735c"/><circle cx="925" cy="540" r="10" fill="none" stroke="#84735c"/>
+ <path d="M1175 570V515 M1175 536L1151 550L1141 562 M1175 536L1198 548L1209 560 M1175 554L1158 570 M1175 554L1193 571" fill="none" stroke="#84735c" stroke-width="5"/>
+</g>
+<text class="resource-label" x="430" y="602" text-anchor="middle">Leaf</text><text class="resource-label" x="675" y="602" text-anchor="middle">Stem</text><text class="resource-label" x="925" y="602" text-anchor="middle">Wood</text><text class="resource-label" x="1175" y="602" text-anchor="middle">Root</text>
+</svg>

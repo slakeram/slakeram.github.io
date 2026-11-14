@@ -1,64 +1,29 @@
 ---
-layout: archive
-title: "CV"
+layout: single
+title: "Curriculum Vitae"
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+author_profile: false
 ---
 
-{% include base_path %}
+<div class="kolam-page-marker kolam-cv" aria-hidden="true"></div>
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<h1 class="cv-person-name">Scott Lakeram</h1>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Education
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+- **Ph.D., Plant Biology** — University of Illinois Urbana–Champaign, 2025  
+  [View dissertation](https://www.ideals.illinois.edu/items/139684)
+- **M.S., Geology** — Texas A&M University, 2020  
+  [View thesis](https://oaktrust.library.tamu.edu/items/e8ff2bb7-9c9d-4495-8529-d78bf5637d88)
+- **B.S., Geology, Minors: Biology and Music** — Hofstra University, 2018
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Appointments
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+- Research Associate, Smithsonian National Museum of Natural History, 2025–present
+- Teaching Faculty, Juneau Icefield Research Program, 2026
+- Predoctoral Fellow, Smithsonian National Museum of Natural History, 2024–2025
+
+## Research interests
+
+Plant–Arthropod Interactions; Paleoecology; Paleobotany; Herbivory; Detritivory; Decomposition; Ecosystem Resilience.
+

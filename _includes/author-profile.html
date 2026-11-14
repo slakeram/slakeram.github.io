@@ -1,176 +1,140 @@
-{% include base_path %}
-
-{% if page.author and site.data.authors[page.author] %}
-  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
-{% endif %}
-
-<div itemscope itemtype="http://schema.org/Person">
-
-  <div class="author__avatar">
-    {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
-    {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
-    {% endif %}
+<div class="botanical-contact-sidebar" aria-label="Academic profile and contact links">
+  <div class="temple-portrait-frame">
+    <div class="temple-portrait-inner">
+      <img class="botanical-profile-photo botanical-profile-photo-film" src="{{ '/images/Profile_Picture.jpg' | relative_url }}" alt="Portrait of Scott Lakeram" width="190" height="225" loading="eager">
+    </div>
+    <svg class="temple-portrait-ornament" viewBox="0 0 202 265" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="#795b3e" stroke-width="1.1">
+        <rect x="3.5" y="3.5" width="195" height="258" rx="1"/>
+        <path d="M13 17 L13 13 L17 13 M185 13 L189 13 L189 17 M13 248 L13 252 L17 252 M185 252 L189 252 L189 248" stroke-width="1.5"/>
+      </g>
+      <g fill="#806044" stroke="#f3e5ca" stroke-width=".45">
+        <circle cx="20" cy="7.5" r="1.2"/>
+        <circle cx="20" cy="257.5" r="1.2"/>
+        <circle cx="27" cy="7.5" r="1.2"/>
+        <circle cx="27" cy="257.5" r="1.2"/>
+        <circle cx="41" cy="7.5" r="1.2"/>
+        <circle cx="41" cy="257.5" r="1.2"/>
+        <circle cx="48" cy="7.5" r="1.2"/>
+        <circle cx="48" cy="257.5" r="1.2"/>
+        <circle cx="55" cy="7.5" r="1.2"/>
+        <circle cx="55" cy="257.5" r="1.2"/>
+        <circle cx="62" cy="7.5" r="1.2"/>
+        <circle cx="62" cy="257.5" r="1.2"/>
+        <circle cx="69" cy="7.5" r="1.2"/>
+        <circle cx="69" cy="257.5" r="1.2"/>
+        <circle cx="76" cy="7.5" r="1.2"/>
+        <circle cx="76" cy="257.5" r="1.2"/>
+        <circle cx="126" cy="7.5" r="1.2"/>
+        <circle cx="126" cy="257.5" r="1.2"/>
+        <circle cx="133" cy="7.5" r="1.2"/>
+        <circle cx="133" cy="257.5" r="1.2"/>
+        <circle cx="140" cy="7.5" r="1.2"/>
+        <circle cx="140" cy="257.5" r="1.2"/>
+        <circle cx="147" cy="7.5" r="1.2"/>
+        <circle cx="147" cy="257.5" r="1.2"/>
+        <circle cx="154" cy="7.5" r="1.2"/>
+        <circle cx="154" cy="257.5" r="1.2"/>
+        <circle cx="161" cy="7.5" r="1.2"/>
+        <circle cx="161" cy="257.5" r="1.2"/>
+        <circle cx="175" cy="7.5" r="1.2"/>
+        <circle cx="175" cy="257.5" r="1.2"/>
+        <circle cx="182" cy="7.5" r="1.2"/>
+        <circle cx="182" cy="257.5" r="1.2"/>
+        <circle cx="7.5" cy="20" r="1.2"/>
+        <circle cx="194.5" cy="20" r="1.2"/>
+        <circle cx="7.5" cy="28" r="1.2"/>
+        <circle cx="194.5" cy="28" r="1.2"/>
+        <circle cx="7.5" cy="36" r="1.2"/>
+        <circle cx="194.5" cy="36" r="1.2"/>
+        <circle cx="7.5" cy="44" r="1.2"/>
+        <circle cx="194.5" cy="44" r="1.2"/>
+        <circle cx="7.5" cy="52" r="1.2"/>
+        <circle cx="194.5" cy="52" r="1.2"/>
+        <circle cx="7.5" cy="60" r="1.2"/>
+        <circle cx="194.5" cy="60" r="1.2"/>
+        <circle cx="7.5" cy="68" r="1.2"/>
+        <circle cx="194.5" cy="68" r="1.2"/>
+        <circle cx="7.5" cy="76" r="1.2"/>
+        <circle cx="194.5" cy="76" r="1.2"/>
+        <circle cx="7.5" cy="84" r="1.2"/>
+        <circle cx="194.5" cy="84" r="1.2"/>
+        <circle cx="7.5" cy="92" r="1.2"/>
+        <circle cx="194.5" cy="92" r="1.2"/>
+        <circle cx="7.5" cy="100" r="1.2"/>
+        <circle cx="194.5" cy="100" r="1.2"/>
+        <circle cx="7.5" cy="108" r="1.2"/>
+        <circle cx="194.5" cy="108" r="1.2"/>
+        <circle cx="7.5" cy="116" r="1.2"/>
+        <circle cx="194.5" cy="116" r="1.2"/>
+        <circle cx="7.5" cy="124" r="1.2"/>
+        <circle cx="194.5" cy="124" r="1.2"/>
+        <circle cx="7.5" cy="140" r="1.2"/>
+        <circle cx="194.5" cy="140" r="1.2"/>
+        <circle cx="7.5" cy="148" r="1.2"/>
+        <circle cx="194.5" cy="148" r="1.2"/>
+        <circle cx="7.5" cy="156" r="1.2"/>
+        <circle cx="194.5" cy="156" r="1.2"/>
+        <circle cx="7.5" cy="164" r="1.2"/>
+        <circle cx="194.5" cy="164" r="1.2"/>
+        <circle cx="7.5" cy="172" r="1.2"/>
+        <circle cx="194.5" cy="172" r="1.2"/>
+        <circle cx="7.5" cy="180" r="1.2"/>
+        <circle cx="194.5" cy="180" r="1.2"/>
+        <circle cx="7.5" cy="188" r="1.2"/>
+        <circle cx="194.5" cy="188" r="1.2"/>
+        <circle cx="7.5" cy="196" r="1.2"/>
+        <circle cx="194.5" cy="196" r="1.2"/>
+        <circle cx="7.5" cy="204" r="1.2"/>
+        <circle cx="194.5" cy="204" r="1.2"/>
+        <circle cx="7.5" cy="212" r="1.2"/>
+        <circle cx="194.5" cy="212" r="1.2"/>
+        <circle cx="7.5" cy="220" r="1.2"/>
+        <circle cx="194.5" cy="220" r="1.2"/>
+        <circle cx="7.5" cy="228" r="1.2"/>
+        <circle cx="194.5" cy="228" r="1.2"/>
+        <circle cx="7.5" cy="236" r="1.2"/>
+        <circle cx="194.5" cy="236" r="1.2"/>
+        <circle cx="7.5" cy="244" r="1.2"/>
+        <circle cx="194.5" cy="244" r="1.2"/>
+      </g>
+      <g fill="#a3835d" stroke="#6e5035" stroke-width=".75">
+        <circle cx="7.5" cy="132.5" r="3"/><circle cx="194.5" cy="132.5" r="3"/>
+        <circle cx="32" cy="7.5" r="2.5"/><circle cx="170" cy="7.5" r="2.5"/>
+        <circle cx="32" cy="257.5" r="2.5"/><circle cx="170" cy="257.5" r="2.5"/>
+      </g>
+    </svg>
+    <svg class="temple-lotus-finial temple-lotus-finial-top" viewBox="0 0 80 42" aria-hidden="true" focusable="false">
+      <g fill="#e1cfad" stroke="#735638" stroke-width="1.15" stroke-linejoin="round">
+        <path d="M40 33 Q27 21 33 8 Q39 14 40 27 Q41 14 47 8 Q53 21 40 33Z"/>
+        <path d="M40 32 Q20 22 22 12 Q32 17 40 32Z"/>
+        <path d="M40 32 Q60 22 58 12 Q48 17 40 32Z"/>
+        <path d="M31 32 Q15 27 13 19 Q26 20 36 32Z"/>
+        <path d="M49 32 Q65 27 67 19 Q54 20 44 32Z"/>
+        <path d="M24 33 Q40 38 56 33" fill="none"/>
+        <path d="M20 35 Q40 41 60 35" fill="none"/>
+      </g>
+      <g fill="none" stroke="#9b7a55" stroke-width=".65" stroke-linecap="round">
+        <path d="M40 15V29 M27 18L35 29 M53 18L45 29"/>
+      </g>
+    </svg>
+    <svg class="temple-lotus-finial temple-lotus-finial-bottom" viewBox="0 0 80 42" aria-hidden="true" focusable="false">
+      <g fill="#e1cfad" stroke="#735638" stroke-width="1.15" stroke-linejoin="round">
+        <path d="M40 33 Q27 21 33 8 Q39 14 40 27 Q41 14 47 8 Q53 21 40 33Z"/>
+        <path d="M40 32 Q20 22 22 12 Q32 17 40 32Z"/>
+        <path d="M40 32 Q60 22 58 12 Q48 17 40 32Z"/>
+        <path d="M31 32 Q15 27 13 19 Q26 20 36 32Z"/>
+        <path d="M49 32 Q65 27 67 19 Q54 20 44 32Z"/>
+        <path d="M24 33 Q40 38 56 33" fill="none"/>
+        <path d="M20 35 Q40 41 60 35" fill="none"/>
+      </g>
+      <g fill="none" stroke="#9b7a55" stroke-width=".65" stroke-linecap="round">
+        <path d="M40 15V29 M27 18L35 29 M53 18L45 29"/>
+      </g>
+    </svg>
   </div>
-
-  <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      <!-- Font Awesome icons / Biographic information  -->
-      {% if author.location %}
-        <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
-      {% endif %}
-      {% if author.employer %}
-        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
-      {% endif %}
-      {% if author.uri %}
-        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
-      {% endif %}
-      {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
-      {% endif %}
-
-      <!-- Font Awesome and Academicons icons / Academic websites -->
-      {% if author.academia %}
-        <li><a href="{{ author.academia }}"><i class="ai ai-academia ai-fw icon-pad-right" aria-hidden="true"></i>Academia</a></li>
-      {% endif %}
-      {% if author.arxiv %}
-        <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw icon-pad-right"></i>arXiv</a></li>
-      {% endif %}      
-      {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
-      {% endif %}
-      {% if author.inspire-hep %}
-        <li><a href="{{ author.inspire-hep }}"><i class="ai ai-inspire ai-fw icon-pad-right"></i>INSPIRE-HEP</a></li>
-      {% endif %}      
-      {% if author.impactstory %}
-        <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw icon-pad-right"></i>Impactstory</a></li>
-      {% endif %}
-      {% if author.orcid %}
-        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
-      {% endif %}
-      {% if author.pubmed %}
-        <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed ai-fw icon-pad-right"></i>PubMed</a></li>
-      {% endif %}                        
-      {% if author.researchgate %}
-        <li><a href="{{ author.researchgate }}"><i class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i>ResearchGate</a></li>
-      {% endif %}
-      {% if author.scopus %}
-        <li><a href="{{ author.scopus }}"><i class="ai ai-scopus ai-fw icon-pad-right"></i>Scopus</a></li>
-      {% endif %}
-      {% if author.semantic %}
-        <li><a href="{{ author.semantic }}"><i class="ai ai-semantic-scholar ai-fw icon-pad-right"></i>Semantic Scholar</a></li>
-      {% endif %}
-      {% if author.ssrn %}
-        <li><a href="{{ author.ssrn }}"><i class="ai ai-ssrn ai-fw icon-pad-right"></i>SSRN</a></li>
-      {% endif %}
-      {% if author.zotero %}
-        <li><a href="{{ author.zotero }}"><i class="ai ai-zotero ai-fw icon-pad-right"></i>Zotero</a></li>
-      {% endif %}
-
-      <!-- Font Awesome icons / Repositories and software development -->
-      {% if author.bitbucket %}
-        <li><a href="https://bitbucket.org/{{ author.bitbucket }}"><i class="fab fa-fw fa-bitbucket icon-pad-right" aria-hidden="true"></i>Bitbucket</a></li>
-      {% endif %}
-      {% if author.codepen %}
-        <li><a href="https://codepen.io/{{ author.codepen }}"><i class="fab fa-fw fa-codepen icon-pad-right" aria-hidden="true"></i>CodePen</a></li>
-      {% endif %}      
-      {% if author.dribbble %}
-        <li><a href="https://dribbble.com/{{ author.dribbble }}"><i class="fab fa-fw fa-dribbble icon-pad-right" aria-hidden="true"></i>Dribbble</a></li>
-      {% endif %}      
-      {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
-      {% endif %}
-      {% if author.kaggle %}
-        <li><a href="https://kaggle.com/{{ author.kaggle }}"><i class="fab fa-fw fa-kaggle icon-pad-right" aria-hidden="true"></i>Kaggle</a></li>
-      {% endif %}      
-      {% if author.stackoverflow %}
-        <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow icon-pad-right" aria-hidden="true"></i>Stackoverflow</a></li>
-      {% endif %}      
-
-      <!-- Font Awesome icons / Social media -->
-      {% if author.artstation %}
-        <li><a href="https://www.artstation.com/{{ author.artstation }}"><i class="fab fa-fw fa-artstation icon-pad-right" aria-hidden="true"></i>Artstation</a></li>
-      {% endif %}        
-      {% if author.bluesky %}
-        <li><a href="https://bsky.app/profile/{{ author.bluesky }}"><i class="fab fa-fw fa-bluesky icon-pad-right" aria-hidden="true"></i>Bluesky</a></li>
-      {% endif %}
-      {% if author.facebook %}
-        <li><a href="https://www.facebook.com/{{ author.facebook }}"><i class="fab fa-fw fa-facebook-f icon-pad-right" aria-hidden="true"></i>Facebook</a></li>
-      {% endif %}
-      {% if author.flickr %}
-        <li><a href="https://www.flickr.com/{{ author.flickr }}"><i class="fab fa-fw fa-flickr icon-pad-right" aria-hidden="true"></i>Flickr</a></li>
-      {% endif %}      
-      {% if author.foursquare %}
-        <li><a href="https://foursquare.com/{{ author.foursquare }}"><i class="fab fa-fw fa-foursquare icon-pad-right" aria-hidden="true"></i>Foursquare</a></li>
-      {% endif %}
-      {% if author.goodreads %}
-        <li><a href="https://www.goodreads.com/{{ author.goodreads }}"><i class="fab fa-fw fa-goodreads icon-pad-right" aria-hidden="true"></i>Goodreads</a></li>
-      {% endif %}            
-      {% if author.google_plus %}
-        <li><a href="https://plus.google.com/+{{ author.google_plus }}"><i class="fab fa-fw fa-google-plus-g icon-pad-right" aria-hidden="true"></i>Google+</a></li>
-      {% endif %}            
-      {% if author.keybase %}
-        <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key icon-pad-right" aria-hidden="true"></i>Keybase</a></li>
-      {% endif %}
-      {% if author.instagram %}
-        <li><a href="https://instagram.com/{{ author.instagram }}"><i class="fab fa-fw fa-instagram icon-pad-right" aria-hidden="true"></i>Instagram</a></li>
-      {% endif %}      
-      {% if author.lastfm %}
-        <li><a href="https://last.fm/user/{{ author.lastfm }}"><i class="fab fa-fw fa-lastfm icon-pad-right" aria-hidden="true"></i>Last.fm</a></li>
-      {% endif %}      
-      {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
-      {% endif %}      
-      {% if author.mastodon %}
-        <li><a href="{{ author.mastodon }}"><i class="fab fa-fw fa-mastodon icon-pad-right" aria-hidden="true"></i>Mastodon</a></li>
-      {% endif %}
-      {% if author.medium %}
-        <li><a href="{{ author.medium }}"><i class="fab fa-fw fa-medium icon-pad-right" aria-hidden="true"></i>Medium</a></li>
-      {% endif %}      
-      {% if author.pinterest %}
-        <li><a href="https://www.pinterest.com/{{ author.pinterest }}"><i class="fab fa-fw fa-pinterest icon-pad-right" aria-hidden="true"></i>Pinterest</a></li>
-      {% endif %}            
-      {% if author.soundcloud %}
-        <li><a href="https://soundcloud.com/{{ author.soundcloud }}"><i class="fab fa-fw fa-soundcloud icon-pad-right" aria-hidden="true"></i>Soundcloud</a></li>
-      {% endif %}      
-      {% if author.steam %}
-        <li><a href="https://steamcommunity.com/id/{{ author.steam }}"><i class="fab fa-fw fa-steam icon-pad-right" aria-hidden="true"></i>Steam</a></li>
-      {% endif %}
-      {% if author.telegram %}
-        <li><a href="{{ author.telegram }}"><i class="fab fa-fw fa-telegram icon-pad-right" aria-hidden="true"></i>Telegram</a></li>
-      {% endif %}      
-      {% if author.tumblr %}
-        <li><a href="https://{{ author.tumblr }}.tumblr.com"><i class="fab fa-fw fa-tumblr icon-pad-right" aria-hidden="true"></i>Tumblr</a></li>
-      {% endif %}      
-      {% if author.twitter %}
-        <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fab fa-fw fa-x-twitter icon-pad-right" aria-hidden="true"></i>X (formerly Twitter)</a></li>
-      {% endif %}
-      {% if author.vine %}
-        <li><a href="https://vine.co/u/{{ author.vine }}"><i class="fab fa-fw fa-vine icon-pad-right" aria-hidden="true"></i>Vine</a></li>
-      {% endif %}        
-      {% if author.weibo %}
-        <li><a href="https://www.weibo.com/{{ author.weibo }}"><i class="fab fa-fw fa-weibo icon-pad-right" aria-hidden="true"></i>Weibo</a></li>
-      {% endif %}
-      {% if author.wikipedia %}
-        <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w icon-pad-right" aria-hidden="true"></i>Wikipedia</a></li>
-      {% endif %}                
-      {% if author.xing %}
-        <li><a href="https://www.xing.com/profile/{{ author.xing }}"><i class="fab fa-fw fa-xing icon-pad-right" aria-hidden="true"></i>XING</a></li>
-      {% endif %}
-      {% if author.youtube %}
-        <li><a href="https://www.youtube.com/@{{ author.youtube }}"><i class="fab fa-fw fa-youtube icon-pad-right" aria-hidden="true"></i>YouTube</a></li>
-      {% endif %}
-      {% if author.zhihu %}
-      <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
-      {% endif %}      
-    </ul>
-  </div>
+  <ul class="author__urls social-icons">
+    <li><a href="mailto:lakerams@si.edu"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>lakerams@si.edu</a></li>
+    <li><a href="https://scholar.google.com/citations?user=Y9aaMxQAAAAJ&amp;hl=en&amp;authuser=1" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar ai-fw icon-pad-right" aria-hidden="true"></i>Google Scholar</a></li>
+  </ul>
 </div>

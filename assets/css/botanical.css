@@ -1,0 +1,710 @@
+/* Botanical palette — forest green, sage, fern, warm cream, ochre */
+:root {
+  --forest:#204c3b; --deep:#153b30; --fern:#477f60;
+  --sage:#dce9d8; --cream:#fbf8ef; --ochre:#b98236;
+  --ink:#273b32; --leaf:#edf3e9;
+}
+body {background:var(--cream); color:var(--ink);}
+.masthead {background:#e5eee2; border-bottom:3px solid var(--fern);}
+.masthead__inner-wrap {background:transparent;}
+.masthead__menu-item a, .greedy-nav a {color:var(--deep);}
+.greedy-nav {background:transparent;}
+.greedy-nav .visible-links a:before {background:var(--ochre);}
+.greedy-nav .visible-links a:hover {color:var(--fern);}
+.page__title {color:var(--deep);font-family:Georgia,serif;}
+.page__content h2 {color:var(--forest);border-bottom:1px solid #c4d8c5;padding-bottom:.35rem;}
+.page__content h3 {color:var(--fern);}
+.page__content a, .author__urls a {color:#276f54;}
+.page__content a:hover, .author__urls a:hover {color:#a56b25;}
+.sidebar {background:var(--leaf);border-radius:10px;padding:1rem;}
+.author__name {color:var(--deep);}
+.author__bio {color:#486b54;}
+.page__footer {background:var(--deep);color:#f0f5ee;}
+.page__footer a, .page__footer-copyright {color:#e3eddf!important;}
+.botanical-hero {background:linear-gradient(118deg,rgba(19,61,45,.97),rgba(51,112,75,.90)),radial-gradient(circle at 80% 20%,#c9d89e,transparent 55%);color:#fff;padding:3.7rem 2.8rem;border-radius:14px;margin-bottom:2rem;border-bottom:7px solid var(--ochre);}
+.botanical-hero h1 {font-family:Georgia,serif;font-size:clamp(2rem,4vw,3.5rem);line-height:1.13;color:#fff;margin:.5rem 0 1.2rem;}
+.botanical-hero p {color:#eaf3e9;max-width:42rem;}
+.botanical-eyebrow {font-size:.74rem;letter-spacing:.16em;font-weight:700;color:#e4bd77;text-transform:uppercase;}
+.botanical-actions {display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.7rem;}
+.botanical-button {display:inline-block;background:#f4e3b9;color:var(--deep)!important;padding:.7rem 1.1rem;border-radius:5px;text-decoration:none!important;font-weight:700;}
+.botanical-button:hover {background:#fff0cc;}
+.botanical-button-light {background:transparent;color:#fff!important;border:1px solid #d7e9d5;}
+.botanical-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:1rem;margin:1.4rem 0 2.3rem;}
+.botanical-card {display:block;background:#e9f1e4;border-top:5px solid var(--fern);padding:1.3rem;border-radius:7px;color:var(--deep)!important;text-decoration:none!important;box-shadow:0 4px 14px rgba(24,63,44,.07);transition:transform .15s ease,box-shadow .15s ease;}
+.botanical-card:nth-child(2) {background:#f3ebd7;border-top-color:var(--ochre);}
+.botanical-card:nth-child(3) {background:#dcebe5;border-top-color:#397d79;}
+.botanical-card:hover {transform:translateY(-3px);box-shadow:0 7px 18px rgba(24,63,44,.15);}
+.botanical-card span {font-size:.72rem;letter-spacing:.08em;color:#55705d;}
+.botanical-card h3 {font-family:Georgia,serif;font-size:1.1rem;line-height:1.3;margin:.7rem 0;color:var(--deep);}
+.botanical-card p {font-size:.87rem;}
+.botanical-intro {border-left:6px solid var(--fern);background:var(--sage);padding:1.6rem 1.8rem;margin-bottom:2rem;border-radius:0 9px 9px 0;}
+.botanical-intro h1 {font-family:Georgia,serif;color:var(--deep);font-size:1.9rem;}
+.publication-list li {padding:.65rem .85rem;margin-bottom:.9rem!important;border-left:3px solid #88ad8a;background:#f0f5eb;border-radius:0 5px 5px 0;}
+.publication-list li:nth-child(even) {background:#f8f0df;border-left-color:var(--ochre);}
+@media(max-width:600px){.botanical-hero{padding:2rem 1.3rem}.botanical-grid{grid-template-columns:1fr}.sidebar{padding:.6rem}}
+
+/* Solid botanical navigation bar, with no site-title label */
+.masthead,
+.masthead__inner-wrap,
+.masthead__menu,
+.greedy-nav,
+.greedy-nav .visible-links,
+.greedy-nav .hidden-links {
+  background-color:#dce9d8 !important;
+}
+.masthead {border-bottom:3px solid #477f60;}
+.greedy-nav .site-title,
+.greedy-nav .site-title a,
+.masthead__menu-item--lg {display:none !important;}
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links a {background:transparent !important;color:#153b30 !important;}
+.greedy-nav .visible-links a:hover,
+.greedy-nav .hidden-links a:hover {background:#c5ddc6 !important;color:#153b30 !important;}
+.greedy-nav .greedy-nav__toggle,
+.greedy-nav button {background:#dce9d8 !important;color:#153b30 !important;}
+.greedy-nav .greedy-nav__toggle:hover,
+.greedy-nav button:hover {background:#c5ddc6 !important;}
+
+
+/* Homepage profile portrait: a simple circular crop above the contact links. */
+.botanical-contact-sidebar .botanical-profile-photo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 36%;
+  border-radius: 50%;
+  border: 4px solid #dce9d8;
+  box-shadow: 0 3px 12px rgba(21, 59, 48, .13);
+  margin: 0 auto 1.1rem;
+}
+.botanical-contact-sidebar .author__urls {
+  margin-top: .3rem;
+}
+
+/* Woodland palette: deep moss greens, walnut browns, warm paper. */
+:root {
+  --forest:#244735; --deep:#173629; --fern:#52764b;
+  --sage:#d9dfcc; --cream:#f4eee0; --ochre:#986d3c;
+  --ink:#332e25; --leaf:#ebe6d5; --bark:#62452e;
+}
+body { background:var(--cream); color:var(--ink); }
+.masthead, .masthead__inner-wrap, .masthead__menu,
+.greedy-nav, .greedy-nav .visible-links, .greedy-nav .hidden-links {
+  background-color:#d9dfcc !important;
+}
+.masthead { border-bottom-color:#6d7851; }
+.greedy-nav .visible-links a, .greedy-nav .hidden-links a {color:#244735!important;}
+.greedy-nav .visible-links a:hover, .greedy-nav .hidden-links a:hover {background:#c2cbb4!important;color:#62452e!important;}
+.greedy-nav .greedy-nav__toggle, .greedy-nav button {background:#d9dfcc!important;}
+.greedy-nav .greedy-nav__toggle:hover, .greedy-nav button:hover {background:#c2cbb4!important;}
+.page__title, .page__content h2 {color:#244735;}
+.page__content h2 {border-bottom-color:#b8b39a;}
+.page__content h3 {color:#62452e;}
+.page__content a, .author__urls a {color:#386548;}
+.page__content a:hover, .author__urls a:hover {color:#8b5932;}
+.sidebar {background:#e9e5d7;border:1px solid #d5ceb8;}
+.botanical-contact-sidebar .botanical-profile-photo {border-color:#c4cdb6;box-shadow:0 4px 18px rgba(46,39,24,.18);}
+.botanical-hero {
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  background:linear-gradient(116deg,#193c2d 0%,#2c5139 64%,#536044 100%);
+  border-bottom:7px solid #8c6338;
+  padding-right:clamp(2rem,26%,19rem);
+}
+.botanical-hero > :not(.botanical-fern-print) {position:relative;z-index:2;}
+.botanical-hero h1 {text-wrap:balance;}
+.botanical-eyebrow {color:#dfc59a;}
+.botanical-button {background:#e7d0a4;color:#173629!important;}
+.botanical-button:hover {background:#f6e5c5;}
+.botanical-button-light {background:transparent;color:#fff!important;border-color:#d4d9c7;}
+.botanical-card {background:#e4e9d9;border-top-color:#52764b;box-shadow:0 4px 14px rgba(54,45,27,.09);}
+.botanical-card:nth-child(2) {background:#ece0cc;border-top-color:#986d3c;}
+.botanical-card:nth-child(3) {background:#e1e5d5;border-top-color:#766a4b;}
+.botanical-card h3 {color:#244735;}
+.botanical-card span {color:#725d42;}
+.botanical-intro {background:#e1e5d5;}
+.publication-list li {background:#e6e9dd;border-left-color:#66805b;}
+.publication-list li:nth-child(even) {background:#eee2d0;border-left-color:#986d3c;}
+.page__footer {background:#1c3529;}
+/* Hand-carved-style fern silhouette, positioned in the hero's empty right margin. */
+.botanical-fern-print {
+  position:absolute;
+  right:0.5rem;
+  top:50%;
+  transform:translateY(-50%);
+  width:clamp(190px,34%,345px);
+  height:94%;
+  color:#dfd19d;
+  opacity:.76;
+  z-index:1;
+  pointer-events:none;
+  filter:drop-shadow(3px 2px 0 rgba(9,24,16,.25));
+}
+.botanical-fern-print svg, .botanical-fern-print img {display:block;width:100%;height:100%;object-fit:contain;}
+@media(max-width:760px){
+  .botanical-hero {padding-right:1.3rem;}
+  .botanical-fern-print {right:-1rem;width:50%;opacity:.22;}
+}
+
+/* Deeper walnut-brown accents for stronger contrast on pale surfaces. */
+:root { --ochre:#75451f; --bark:#3f2a1d; --ink:#28241f; }
+.page__content h3 {color:#493020;}
+.page__content a:hover, .author__urls a:hover {color:#613a20;}
+.botanical-card:nth-child(2) {border-top-color:#75451f;background:#e8d8bd;}
+.botanical-card:nth-child(3) {border-top-color:#59412c;}
+.botanical-card span {color:#503b27;}
+.botanical-hero {border-bottom-color:#75451f;}
+.botanical-eyebrow {color:#f0d3a4;}
+.botanical-button {background:#ddbd89;}
+.publication-list li:nth-child(even) {border-left-color:#75451f;}
+
+/* Repeating fern woodblock motif on the homepage's off-white negative space.
+   The hero, cards, and content remain legible above the pattern. */
+body:has(.botanical-hero) {
+  background-color:#f4eee0;
+  background-image:linear-gradient(rgba(244,238,224,.72),rgba(244,238,224,.72)),url("/images/homepage-fern-beetle-blockprint.svg");
+  background-repeat:repeat;
+  background-size:440px 440px;
+  background-position:center top;
+  background-attachment:fixed;
+}
+body:has(.botanical-hero) .sidebar {
+  background-color:rgba(235,230,215,.72);
+}
+@media(max-width:760px) {
+  body:has(.botanical-hero) {background-size:340px 340px;}
+}
+
+/* Legible paper panels over the repeating fern-and-beetle woodcut wallpaper. */
+body:has(.botanical-hero) .botanical-content-panel {
+  background:rgba(250,247,238,.97);
+  border:1px solid #d4c6ad;
+  border-left:4px solid #705032;
+  border-radius:9px;
+  padding:1.3rem 1.6rem;
+  margin:1.2rem 0 1.7rem;
+  box-shadow:0 5px 17px rgba(57,43,28,.09);
+}
+body:has(.botanical-hero) .botanical-content-panel h2 {
+  margin-top:0;
+}
+body:has(.botanical-hero) .botanical-content-panel p {
+  color:#292820;
+}
+body:has(.botanical-hero) .botanical-content-panel .botanical-grid {
+  margin-bottom:.4rem;
+}
+@media(max-width:600px){
+  body:has(.botanical-hero) .botanical-content-panel {padding:1rem 1.05rem;}
+}
+
+/* Teaching page: four distinct, readable sections instead of uninterrupted prose. */
+.teaching-methods {display:grid;grid-template-columns:1fr;gap:1.4rem;margin:1.5rem 0 2.5rem;}
+.teaching-method-card {background:#f8f3e8;border:1px solid #c9bea8;border-left:5px solid #49694a;border-radius:12px;padding:1.5rem 1.7rem;box-shadow:0 5px 17px rgba(53,43,29,.07);}
+.teaching-method-card:nth-child(even) {background:#eee6d7;border-left-color:#65472d;}
+.teaching-method-header {display:flex;align-items:flex-start;gap:1rem;margin-bottom:.85rem;}
+.teaching-method-number {flex:none;display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;background:#244735;color:#f8f3e8;font-size:.85rem;font-weight:700;letter-spacing:.05em;}
+.teaching-method-card:nth-child(even) .teaching-method-number {background:#65472d;}
+.teaching-method-header h2 {margin:.1rem 0 0!important;padding:0!important;border:0!important;font-size:clamp(1.2rem,2.1vw,1.65rem);line-height:1.25;color:#244735;}
+.teaching-method-card:nth-child(even) h2 {color:#503621;}
+.teaching-method-copy {padding-left:3.6rem;}
+.teaching-method-copy p {margin:0 0 .9rem;line-height:1.7;color:#302d25;}
+.teaching-method-copy p:last-child {margin-bottom:0;}
+@media(max-width:650px){.teaching-method-card{padding:1.1rem 1rem}.teaching-method-header{gap:.7rem}.teaching-method-number{width:2.1rem;height:2.1rem}.teaching-method-copy{padding-left:0}}
+
+
+
+/* Four original hand-carved botanical/kolam SVG borders rotated into
+   horizontal artwork. No distortion or embedded CSS vector approximations. */
+.kolam-page-marker {display:none;}
+body:has(.kolam-page-marker) .masthead {
+  position:relative;
+  margin-bottom:112px;
+  border-bottom:0!important;
+}
+body:has(.kolam-page-marker) .masthead::after {
+  content:"";
+  position:absolute;
+  top:100%;
+  left:0;right:0;
+  height:100px;
+  background-color:#f4eee0;
+  /* Uniform double rules: thick outside, hairline inside.
+     Drawn once across the viewport so repeated SVG seams cannot break them. */
+  background-image:
+    linear-gradient(#3f2418,#3f2418),
+    linear-gradient(#3f2418,#3f2418),
+    linear-gradient(#3f2418,#3f2418),
+    linear-gradient(#3f2418,#3f2418),
+    var(--kolam-horizontal);
+  background-position:
+    center 5px, center 14px,
+    center 85px, center 94px,
+    center center;
+  background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,repeat-x;
+  background-size:
+    100% 3px,100% 1px,
+    100% 1px,100% 3px,
+    auto 100px;
+  border:0;
+  box-sizing:border-box;
+  pointer-events:none;
+}
+body:has(.kolam-research) {--kolam-horizontal:url("/images/kolam-research-horizontal.svg");}
+body:has(.kolam-teaching) {--kolam-horizontal:url("/images/kolam-teaching-horizontal.svg");}
+body:has(.kolam-publications) {--kolam-horizontal:url("/images/kolam-publications-horizontal.svg");}
+body:has(.kolam-cv) {--kolam-horizontal:url("/images/kolam-cv-horizontal.svg");}
+@media(max-width:650px){
+  body:has(.kolam-page-marker) .masthead {margin-bottom:83px;}
+  body:has(.kolam-page-marker) .masthead::after {
+    height:72px;
+    background-size:100% 2px,100% 1px,100% 1px,100% 2px,auto 72px;
+    background-position:center 3px,center 10px,center 61px,center 68px,center center;
+  }
+}
+/* The navigation bar stays a consistent soft sage, including every link. */
+.masthead, .masthead__inner-wrap, .masthead__menu,
+.greedy-nav, .greedy-nav .visible-links,
+.greedy-nav .visible-links > li,
+.greedy-nav .visible-links > li > a {background:#d9dfcc!important;}
+.greedy-nav .visible-links a {font-weight:700!important;color:#1d3b2c!important;}
+
+/* Personal homepage hierarchy: lead with the researcher, then the research. */
+body:has(.botanical-hero) .page__title {display:none;}
+.botanical-hero .botanical-hero-name {
+  font-family:Georgia,serif;
+  font-size:clamp(2.65rem,5vw,4.6rem);
+  line-height:1.05;
+  letter-spacing:-.025em;
+  margin:.45rem 0 .35rem;
+  color:#fff;
+  text-wrap:balance;
+}
+.botanical-hero .botanical-hero-degree {
+  font-size:clamp(1.2rem,2vw,1.5rem);
+  font-weight:600;
+  letter-spacing:.035em;
+  color:#eadbb9;
+  margin:0 0 1.75rem;
+}
+.botanical-hero .botanical-hero-focus {
+  font-family:Georgia,serif;
+  font-size:clamp(1.3rem,2.15vw,2rem);
+  font-weight:500;
+  line-height:1.32;
+  color:#fff7e8;
+  border:0;
+  padding:0;
+  margin:0;
+  max-width:31rem;
+  text-wrap:pretty;
+}
+@media(max-width:760px){
+  .botanical-hero .botanical-hero-focus {max-width:100%;}
+}
+
+/* Give the homepage portrait breathing room below the masthead. */
+body:has(.botanical-hero) .botanical-contact-sidebar {
+  padding-top: 1.7rem;
+}
+body:has(.botanical-hero) .botanical-profile-photo {
+  margin-top: .7rem;
+}
+
+/* Hide the redundant hamburger when all navigation links fit.
+   Keep it on narrow screens so the menu remains accessible. */
+@media (min-width: 900px) {
+  .greedy-nav > button { display: none !important; }
+}
+
+
+/* Public-facing teaching page: concise 2x2 approaches, photographic gallery and mentorship. */
+.teaching-page {max-width:100%;}
+.teaching-page-intro {margin:1.1rem 0 2rem;padding:1.55rem 1.8rem;background:rgba(250,247,238,.96);border:1px solid #d3c5ad;border-left:5px solid #49694a;border-radius:12px;}
+.teaching-page-kicker {margin:0 0 .45rem!important;letter-spacing:.14em;font-size:.74rem;font-weight:800;color:#735038;}
+.teaching-page-intro h1 {margin:.25rem 0 .9rem;font:700 clamp(1.85rem,3vw,2.75rem)/1.15 Georgia,serif;color:#244735;}
+.teaching-page-intro p:last-child {max-width:72ch;margin:0;line-height:1.7;}
+.teaching-section-heading {margin:1.9rem 0 1.1rem!important;border-bottom:1px solid #bcb49e;padding-bottom:.4rem!important;font-family:Georgia,serif;color:#244735;}
+.teaching-methods-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;margin:1rem 0 2rem;}
+.teaching-methods-grid .teaching-method-card {min-width:0;margin:0;padding:1.35rem 1.4rem;}
+.teaching-methods-grid .teaching-method-header {gap:.8rem;align-items:center;margin-bottom:.8rem;}
+.teaching-methods-grid .teaching-method-header h3 {margin:0!important;font-family:Georgia,serif;font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.3;color:#244735;}
+.teaching-methods-grid .teaching-method-card:nth-child(even) h3 {color:#503621;}
+.teaching-methods-grid .teaching-method-number {width:2.2rem;height:2.2rem;font-size:.76rem;}
+.teaching-methods-grid .teaching-method-copy {padding-left:0;}
+.teaching-methods-grid .teaching-method-copy p {font-size:.94rem;line-height:1.6;}
+.teaching-photo-gallery {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem;margin:1.1rem 0 2.2rem;}
+.teaching-photo-gallery figure {margin:0;min-width:0;background:#f8f3e8;border:1px solid #cbbca5;border-radius:9px;overflow:hidden;box-shadow:0 3px 12px rgba(51,40,26,.08);}
+.teaching-photo-gallery img {display:block;width:100%;height:clamp(220px,27vw,310px);object-fit:cover;}
+.teaching-photo-gallery figcaption {font-size:.78rem;font-weight:650;line-height:1.45;color:#4a3b2b;padding:.65rem .72rem;}
+.teaching-mentorship-panel {background:linear-gradient(115deg,#244735,#36583d);color:#f9f4e8;border-radius:12px;padding:1.7rem 2rem;margin:2rem 0 2.5rem;border-bottom:5px solid #785234;}
+.teaching-mentorship-panel h2 {margin:0 0 .8rem!important;padding:0!important;border:0!important;color:#fff7e8!important;font-family:Georgia,serif;}
+.teaching-mentorship-panel p {max-width:76ch;color:#f8f3e8;line-height:1.75;margin:0;}
+@media(max-width:900px){
+ .teaching-methods-grid {grid-template-columns:1fr;}
+ .teaching-photo-gallery {grid-template-columns:repeat(2,minmax(0,1fr));}
+ .teaching-photo-gallery img {height:clamp(190px,35vw,270px);}
+}
+@media(max-width:580px){
+ .teaching-page-intro {padding:1.1rem 1.15rem;}
+ .teaching-mentorship-panel {padding:1.25rem;}
+ .teaching-photo-gallery img {height:clamp(145px,38vw,210px);}
+}
+
+/* CV identity heading aligns with the left edge of the section headings and content. */
+body:has(.kolam-cv) .cv-person-name {text-align:left!important;margin:0 0 1.5rem!important;padding:0!important;font-family:Georgia,serif;color:#244735;line-height:1.2;}
+
+/* Film portrait: preserve the candid framing while rotating the upside-down original
+   for an upright, face-focused circular sidebar crop. */
+.botanical-contact-sidebar .botanical-profile-photo-film {
+  object-position: center 40%;
+  border: 5px solid #eee3c9;
+  outline: 1px solid #8c7455;
+  box-shadow: 0 5px 18px rgba(46,39,24,.2);
+}
+
+/* Film portrait: a softly rounded rectangular print rather than a circular headshot.
+   The wider frame preserves more of the candid photograph and suits the vintage palette. */
+.botanical-contact-sidebar .botanical-profile-photo-film {
+  width: 190px;
+  height: 225px;
+  max-width: 100%;
+  aspect-ratio: 19 / 22.5;
+  object-fit: cover;
+  object-position: center 43%;
+  border-radius: 12px;
+  border: 5px solid #eee3c9;
+  outline: 1px solid #8c7455;
+  box-shadow: 0 6px 20px rgba(46,39,24,.20);
+}
+
+/* South Indian temple-carving-inspired portrait surround:
+   stepped stonework, rhythmic carved lines, floral/diamond details.
+   Ornament is decorative and does not obscure the photograph. */
+.temple-portrait-frame {
+  position:relative;
+  box-sizing:border-box;
+  width:224px;
+  max-width:100%;
+  padding:19px;
+  margin:0 auto 1.25rem;
+  background:linear-gradient(145deg,#e9ddc3,#d2c09e 50%,#eee3ca);
+  border:1px solid #806744;
+  box-shadow:0 7px 20px rgba(45,34,23,.2);
+  color:#6e4c2e;
+}
+.temple-portrait-inner {
+  position:relative;
+  z-index:1;
+  overflow:hidden;
+  background:#d3c5a9;
+  border:2px solid #705439;
+}
+.botanical-contact-sidebar .temple-portrait-inner .botanical-profile-photo-film {
+  display:block;
+  width:100%;
+  height:220px;
+  max-width:none;
+  margin:0;
+  border:0;
+  outline:0;
+  border-radius:0;
+  box-shadow:none;
+  object-fit:cover;
+  object-position:center 43%;
+}
+.temple-portrait-ornament {
+  position:absolute;
+  inset:0;
+  z-index:2;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+}
+@media(max-width:480px) {
+  .temple-portrait-frame {width:210px;padding:18px;}
+  .botanical-contact-sidebar .temple-portrait-inner .botanical-profile-photo-film {height:207px;}
+}
+
+/* Refined temple-inspired portrait: narrower sandstone moulding, carved lotus
+   ornament and a clean inset photograph. No ornament crosses the image. */
+.temple-portrait-frame {
+  width:202px;
+  padding:14px;
+  background:linear-gradient(135deg,#e9dec7 0%,#d8c7a7 48%,#eee2ca 100%);
+  border:1px solid #866f50;
+  box-shadow:0 5px 16px rgba(45,34,23,.14);
+  color:#65492f;
+}
+.temple-portrait-inner {
+  z-index:3;
+  border:1px solid #755a3e;
+  box-shadow:0 0 0 2px rgba(251,243,224,.55);
+}
+.botanical-contact-sidebar .temple-portrait-inner .botanical-profile-photo-film {
+  height:232px;
+  object-position:center 43%;
+}
+.temple-portrait-ornament {z-index:2;}
+@media(max-width:480px) {
+  .temple-portrait-frame {width:202px;padding:14px;}
+  .botanical-contact-sidebar .temple-portrait-inner .botanical-profile-photo-film {height:232px;}
+}
+
+/* Raised lotus finials and carved beadwork: ornaments project beyond the
+   sandstone moulding while the photograph remains clear. */
+.temple-portrait-frame {
+  margin-top:16px;
+  margin-bottom:1.45rem;
+  overflow:visible;
+  background:linear-gradient(135deg,#e8d7b9,#cdb48d 48%,#eadbc1);
+}
+.temple-portrait-ornament {
+  overflow:visible;
+  filter:drop-shadow(0 1px 0 rgba(255,247,226,.45));
+}
+.temple-portrait-inner {z-index:1;}
+
+/* Lotus finials bloom outward from the top and bottom edges, never inward
+   across the portrait. Relief-like highlights evoke carved sandstone. */
+.temple-portrait-frame {margin-top:39px;margin-bottom:3rem;}
+.temple-lotus-finial {
+  position:absolute;
+  left:50%;
+  width:105px;
+  height:54px;
+  max-width:none;
+  z-index:5;
+  overflow:visible;
+  pointer-events:none;
+  filter:drop-shadow(0 2px 1px rgba(55,38,22,.38));
+}
+.temple-lotus-finial-top {
+  top:-46px;
+  transform:translateX(-50%);
+}
+.temple-lotus-finial-bottom {
+  bottom:-46px;
+  transform:translateX(-50%) rotate(180deg);
+}
+@media(max-width:480px) {
+  .temple-portrait-frame {margin-top:39px;margin-bottom:3rem;}
+}
+
+/* Delicate, flat carved lotus accents: only a small part protrudes from the
+   beadwork border; no embossed shadows or oversized floral crowns. */
+.temple-portrait-frame {margin-top:18px;margin-bottom:1.55rem;}
+.temple-lotus-finial {
+  width:66px;
+  height:35px;
+  filter:none;
+}
+.temple-lotus-finial-top {top:-21px;}
+.temple-lotus-finial-bottom {bottom:-21px;}
+@media(max-width:480px) {
+  .temple-portrait-frame {margin-top:18px;margin-bottom:1.55rem;}
+}
+
+/* Research narrative: concise, illustrated sections with accessible typography. */
+.research-story{max-width:1020px;margin:1.7rem auto 3rem;color:#34483b}
+.research-story>section{padding:2rem 0;border-bottom:1px solid #d7cdb8}
+.research-story>section:last-child{border-bottom:0}
+.research-story h2{font:700 clamp(1.55rem,2.5vw,2.05rem)/1.25 Georgia,serif;color:#2d4936;margin:.25rem 0 1rem}
+.research-story h3{font:700 clamp(1.18rem,1.9vw,1.45rem)/1.35 Georgia,serif;color:#38503b;margin:0 0 .8rem}
+.research-story p{line-height:1.7;margin:0 0 1rem}
+.research-story-eyebrow{font:700 .72rem/1.4 Arial,sans-serif;letter-spacing:.16em;color:#8c7047;margin:0 0 .55rem!important}
+.research-story-opening{max-width:830px}
+.research-story-feature{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:center;margin:1.8rem 0 2.4rem}
+.research-story-feature-reverse .research-story-copy{order:2}
+.research-story-feature-reverse figure{order:1}
+.research-story figure{margin:0}
+.research-story figure img{display:block;width:100%;height:auto;border:1px solid #d1c4ab;border-radius:6px;background:#f5f1e7}
+.research-story figcaption{font:.83rem/1.55 Arial,sans-serif;color:#726e60;margin-top:.55rem}
+.research-story-network{background:#faf8f2;border:1px solid #d9d0bb;border-radius:9px;padding:1rem;margin:1.4rem 0!important}
+.research-story-network img{border:0!important;background:transparent!important}
+.research-story-question{display:grid;grid-template-columns:64px minmax(0,1fr);gap:1.1rem;padding:1.5rem 0;border-top:1px solid #ded5c3}
+.research-story-question:first-of-type{margin-top:1.4rem}
+.research-story-number{font:700 2rem/1 Georgia,serif;color:#9b8157}
+.research-story-question p{max-width:760px}
+.research-story-gallery{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+.research-story-gallery img{width:100%;height:250px!important;object-fit:cover}
+.research-story-note{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:245px;padding:1rem;background:#f4f0e5;border:1px dashed #b7a98d;border-radius:6px;text-align:center}
+.research-story-fossil-symbol{display:flex;gap:15px;align-items:center;justify-content:center;height:120px}
+.research-story-fossil-symbol span{width:28px;height:28px;background:#b4a388;border-radius:50%}
+.research-story-fossil-symbol span:nth-child(2){width:40px;height:40px;border-radius:35%}
+.research-story-fossil-symbol span:nth-child(3){width:20px;height:20px}
+.research-story-further{background:#f6f2e8;border-radius:9px;padding:1.4rem 1.7rem!important;margin-top:2rem}
+@media(max-width:720px){.research-story>section{padding:1.5rem 0}.research-story-feature{grid-template-columns:1fr;gap:1rem}.research-story-feature-reverse .research-story-copy,.research-story-feature-reverse figure{order:initial}.research-story-gallery{grid-template-columns:1fr}.research-story-gallery img{height:auto!important;max-height:350px}.research-story-question{grid-template-columns:46px 1fr;gap:.65rem}.research-story-number{font-size:1.55rem}}
+
+/* Coprolite specimens: full-width gallery, uncropped images and readable captions. */
+.research-story-coprolites{margin:2rem 0 2.5rem}
+.research-story-coprolites .research-story-copy{max-width:830px}
+.research-story-coprolite-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;align-items:start;margin-top:1.6rem}
+.research-story-coprolite-gallery figure{min-width:0}
+.research-story-coprolite-gallery img{display:block;width:100%;height:auto!important;max-height:430px;object-fit:contain!important;object-position:center;background:#f5f1e7}
+.research-story-coprolite-gallery figcaption{margin-top:.75rem}
+@media(max-width:720px){.research-story-coprolite-gallery{grid-template-columns:1fr;gap:1.75rem}.research-story-coprolite-gallery img{max-height:none}}
+
+/* Darker research-page section label for contrast against the pale intro panel. */
+.kolam-research + .botanical-intro .botanical-eyebrow {color:#493b27;}
+
+/* Antique carved-wood finish for the portrait surround.
+   Fine, low-contrast grain and recessed edges retain the existing carved ornament. */
+.temple-portrait-frame {
+  background-color:#b99a72;
+  background-image:
+    repeating-linear-gradient(94deg,
+      rgba(75,46,26,.10) 0px,rgba(75,46,26,.10) 1px,
+      rgba(242,219,176,.06) 2px,transparent 5px,
+      rgba(77,48,27,.045) 9px,transparent 14px),
+    repeating-linear-gradient(2deg,
+      transparent 0px,transparent 17px,
+      rgba(77,47,28,.035) 18px,transparent 21px),
+    linear-gradient(130deg,#dfcba8 0%,#b99a72 42%,#c7a982 68%,#e2cda9 100%);
+  border-color:#725235;
+  box-shadow:
+    inset 2px 2px 2px rgba(255,239,202,.42),
+    inset -3px -3px 5px rgba(66,39,23,.25),
+    0 6px 17px rgba(45,34,23,.18);
+}
+.temple-portrait-inner {
+  box-shadow:
+    0 0 0 2px rgba(245,221,179,.38),
+    0 0 0 4px rgba(91,59,35,.19),
+    inset 0 2px 4px rgba(45,29,18,.25);
+}
+
+/* Responsive botanical navigation: horizontal links on wide screens and
+   an accessible native details dropdown on tablets and phones. */
+.botanical-site-nav {
+  position:relative;
+  max-width:100%;
+  background:transparent;
+  color:#244735;
+  font-family:Arial,sans-serif;
+}
+.botanical-nav-desktop {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:0;
+}
+.botanical-site-nav .botanical-nav-link {
+  display:inline-flex;
+  align-items:center;
+  min-height:55px;
+  padding:.85rem 1.15rem;
+  color:#244735;
+  font-size:1rem;
+  font-weight:700;
+  text-decoration:none;
+  border-bottom:3px solid transparent;
+}
+.botanical-site-nav .botanical-nav-link:hover,
+.botanical-site-nav .botanical-nav-link:focus-visible {
+  background:#c2cbb4;
+  color:#3f2a1d;
+}
+.botanical-site-nav .botanical-nav-link.is-current {
+  border-bottom-color:#75451f;
+}
+.botanical-nav-dropdown {display:none;}
+@media (max-width:800px) {
+  .botanical-site-nav .botanical-nav-desktop {display:none;}
+  .botanical-nav-dropdown {display:block;position:relative;}
+  .botanical-nav-dropdown > summary {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:1rem;
+    box-sizing:border-box;
+    min-height:54px;
+    padding:.8rem 1.1rem;
+    font-weight:700;
+    color:#244735;
+    background:#d9dfcc;
+    cursor:pointer;
+    list-style:none;
+  }
+  .botanical-nav-dropdown > summary::-webkit-details-marker {display:none;}
+  .botanical-nav-dropdown > summary::marker {content:"";}
+  .botanical-nav-dropdown > summary:hover,
+  .botanical-nav-dropdown > summary:focus-visible {
+    background:#c2cbb4;
+  }
+  .botanical-nav-dropdown[open] > summary {background:#c2cbb4;}
+  .botanical-nav-menu-icon {flex:none;transition:transform .16s ease;}
+  .botanical-nav-dropdown[open] .botanical-nav-menu-icon {transform:rotate(90deg);}
+  .botanical-nav-dropdown-list {
+    position:absolute;
+    left:0;
+    right:0;
+    top:100%;
+    z-index:1000;
+    display:block;
+    padding:.4rem 0;
+    margin:0;
+    list-style:none;
+    background:#f4eee0;
+    border:1px solid #b8ae92;
+    border-top:3px solid #75451f;
+    border-radius:0 0 7px 7px;
+    box-shadow:0 9px 18px rgba(45,34,23,.18);
+  }
+  .botanical-nav-dropdown-list li {margin:0;padding:0;list-style:none;}
+  .botanical-nav-dropdown-list a {
+    display:block;
+    padding:.8rem 1.2rem;
+    color:#244735;
+    font-size:1rem;
+    font-weight:650;
+    text-decoration:none;
+  }
+  .botanical-nav-dropdown-list a:hover,
+  .botanical-nav-dropdown-list a:focus-visible,
+  .botanical-nav-dropdown-list a[aria-current="page"] {
+    color:#3f2a1d;
+    background:#e2dac7;
+  }
+}
+
+
+/* Phillips Coal Ball Collection: interactive archival plate reader. */
+.coal-book-gallery{max-width:800px;margin:2rem auto 2.6rem;padding:1.4rem;background:#f3eddf;border:1px solid #c9b99c;border-radius:10px;box-shadow:0 5px 20px rgba(58,43,27,.08)}
+.coal-book-heading{text-align:center;margin-bottom:1rem}
+.coal-book-heading h4{font-family:Georgia,serif;color:#244735;font-size:1.4rem;margin:.3rem 0 .7rem}
+.coal-book-heading p:last-child{max-width:610px;margin:0 auto;color:#514735;font-size:.95rem}
+.coal-book-figure{margin:0!important}
+.coal-book-stage{display:flex;align-items:center;justify-content:center;min-height:280px;padding:1rem;background:#dfd3bb;border:1px solid #c8b99e;border-radius:6px;overflow:hidden}
+.coal-book-enlarge{display:block;max-width:100%;text-align:center;perspective:1400px}
+.coal-book-image{display:block;width:auto;max-width:100%;max-height:660px;height:auto;margin:auto;object-fit:contain;box-shadow:4px 5px 14px rgba(49,36,24,.17);transform-origin:left center;backface-visibility:hidden}
+.coal-book-image.coal-book-turn-next{animation:coal-book-out-next .36s ease-in forwards}
+.coal-book-image.coal-book-turn-prev{animation:coal-book-out-prev .36s ease-in forwards}
+.coal-book-image.coal-book-arrive{animation:coal-book-in .36s ease-out both}
+@keyframes coal-book-out-next{to{transform:rotateY(-65deg);opacity:.18}}
+@keyframes coal-book-out-prev{to{transform:rotateY(65deg);opacity:.18}}
+@keyframes coal-book-in{from{transform:rotateY(32deg);opacity:.2}to{transform:rotateY(0);opacity:1}}
+.coal-book-caption{text-align:center;font-size:.84rem;color:#5c4e3b;margin:.8rem 0!important}
+.coal-book-controls{display:flex;justify-content:space-between;align-items:center;gap:.7rem;margin:1rem 0}
+.coal-book-controls button{background:#244735;color:#fff;border:1px solid #244735;border-radius:5px;padding:.65rem .9rem;cursor:pointer;font-weight:650}
+.coal-book-controls button:hover:not(:disabled),.coal-book-controls button:focus-visible{background:#3b624a}
+.coal-book-controls button:disabled{opacity:.4;cursor:not-allowed}
+.coal-book-count{color:#534531;font-size:.86rem;text-align:center}
+.coal-book-credit{text-align:center;color:#6a5a46;font-size:.78rem;margin:.8rem 0 0!important}
+@media(max-width:600px){.coal-book-gallery{padding:.8rem}.coal-book-stage{padding:.5rem;min-height:180px}.coal-book-controls button{padding:.55rem .6rem}.coal-book-count{font-size:.76rem}}
+@media(prefers-reduced-motion:reduce){.coal-book-image{animation:none!important;transition:none!important}}
+
+/* Center the archival book reader and its image within the research content. */
+.research-story .coal-book-gallery{box-sizing:border-box;width:min(100%,800px);margin-left:auto!important;margin-right:auto!important;float:none;clear:both}
+.coal-book-stage{width:100%;box-sizing:border-box;justify-content:center;align-items:center}
+.coal-book-enlarge{width:100%;display:flex;align-items:center;justify-content:center;margin-inline:auto}
+.coal-book-image{margin-inline:auto!important}
+
+/* Show archival plates without a separate framed backdrop or white presentation panel. */
+.coal-book-stage{background:transparent!important;border:0!important;padding:0!important;min-height:0!important}
+.coal-book-enlarge{background:transparent!important}
+.coal-book-image{background:transparent!important;box-shadow:none!important}
