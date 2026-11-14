@@ -25,8 +25,8 @@ author_profile: false
     <h2 id="fossil-evidence">Windows into ancient ecosystems</h2>
     <div class="research-story-copy">
       <h3>Coal balls: Preserving ancient forests</h3>
-      <p>Coal balls formed when mineral-rich water entered ancient peat deposits and minerals, commonly calcium carbonate, precipitated around buried plant material. This early mineralization preserved delicate tissues before they were compacted and altered during coal formation.</p>
-      <p>As a result, coal balls can preserve roots, stems, leaves, and other plant organs in remarkable anatomical detail. They provide a rare glimpse into the plants of Pennsylvanian peat forests and the organisms that interacted with them.</p>
+      <p>Coal balls are mineralized masses found within coal seams, primarily from the Carboniferous and Permian periods. They formed when mineral-rich water infiltrated ancient peat deposits, causing minerals such as calcium carbonate to precipitate around buried plant tissues. This process preserved delicate plant structures before they were compacted during coal formation.</p>
+      <p>Coal balls preserve roots, stems, leaves, and other plant organs at cellular resolution. They can also preserve evidence of arthropod feeding activity within plant tissues. Unlike many other plant fossils, which primarily preserve external features, coal balls reveal internal anatomy in exceptional detail. This unique preservation provides insight into the vegetation of Pennsylvanian peat forests and the ecological interactions within these ancient ecosystems.</p>
     </div>
     <div class="coal-book-gallery" data-coal-book-gallery aria-label="Phillips Coal Ball Collection image gallery">
       <div class="coal-book-heading">
@@ -130,17 +130,17 @@ author_profile: false
     <div class="research-story-coprolites">
       <div class="research-story-copy">
         <h3>Coprolites: Evidence of ancient feeding</h3>
-        <p>Coprolites are fossilized fecal material that preserve evidence of what ancient organisms consumed. Their shapes, internal structures, and preserved plant fragments provide clues about feeding behavior that would otherwise be difficult to recognize in the fossil record.</p>
-        <p>They are particularly valuable for studying small arthropods whose bodies are rarely preserved. My research draws on more than 6,000 examined coprolites and systematic frameworks for 26 morphotypes to investigate herbivory and detritivory.</p>
+    <p>Coprolites are fossilized fecal material that preserve evidence of what ancient organisms consumed. Commonly found within coal balls, their shapes, distribution, and contents provide clues about feeding behavior that would otherwise be difficult to recognize in the fossil record.</p>
+    <p>These fossils are particularly valuable for studying small arthropods whose bodies are rarely preserved. To better understand their ecological roles, I have examined more than 6,000 coprolites and developed a systematic framework encompassing 26 morphotypes. This data set provides insight into patterns of herbivory, detritivory, and resource allocation in Pennsylvanian peat forests.</p>
       </div>
       <div class="research-story-gallery research-story-coprolite-gallery">
         <figure>
           <img src="{{ '/images/cordaite%20wood%20copro%20mite.png' | relative_url }}" alt="Fossil coprolite and associated mite in cordaite wood" loading="lazy"/>
-          <figcaption>Coprolites (indicated by the pink arrows) attributed to oribatid mites preserved within borings in Cordaites wood.</figcaption>
+          <figcaption>Coprolites attributed to oribatid mites (pink arrows) preserved within borings in *Cordaites* wood.</figcaption>
         </figure>
         <figure>
           <img src="{{ '/images/Convolutispora%20matrix%20coprolite.png' | relative_url }}" alt="A coprolite indicated by a pink arrow containing spores from Psaronius tree ferns, Convolutispora, occurring in the peat matrix" loading="lazy"/>
-          <figcaption>A coprolite (indicated by a pink arrow) containing spores from <em>Psaronius</em> tree ferns, <em>Convolutispora</em>, occurring in the peat matrix.</figcaption>
+          <figcaption>A coprolite (pink arrow) containing *Convolutispora* spores, attributed to *Psaronius* tree ferns, preserved within the peat matrix.</figcaption>
         </figure>
       </div>
     </div>
