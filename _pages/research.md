@@ -164,7 +164,7 @@ author_profile: false
     <article class="research-story-question" id="decomposition">
       <span class="research-story-number">01</span>
       <div>
-        <h3>How did arthropods contribute to decomposition in ancient forests?</h3>
+        <h3>How do arthropods contribute to decomposition in forests?</h3>
         <p>Decomposition plays an important role in nutrient cycling and organic-matter accumulation, yet the contributions of arthropods in ancient peat-forming ecosystems remain poorly understood. Comparisons with modern wetlands help reveal how arthropod activity influences plant-litter breakdown and peat accumulation.</p>
       </div>
     </article>
@@ -172,7 +172,7 @@ author_profile: false
     <article class="research-story-question" id="specialization">
       <span class="research-story-number">02</span>
       <div>
-        <h3>How did resource partitioning shape ancient food webs?</h3>
+        <h3>How does resource partitioning shape food webs?</h3>
         <p>Different arthropods utilize different plant resources, influencing feeding specialization and the organization of food webs. Comparing fossil feeding associations with those of living arthropods helps reveal how resources were partitioned within ancient ecosystems.</p>
       </div>
     </article>
@@ -180,7 +180,7 @@ author_profile: false
     <article class="research-story-question" id="change">
       <span class="research-story-number">03</span>
       <div>
-        <h3>How did environmental change restructure ancient food webs?</h3>
+        <h3>How does environmental change restructure food webs?</h3>
         <p>Changes in vegetation can alter the resources available to arthropods and their feeding relationships. Examining the Middle–Late Pennsylvanian Floral Transition and glaciation cycles alongside modern ecosystems helps investigate how food webs respond to shifts in plant communities and environmental conditions.</p>
       </div>
     </article>
