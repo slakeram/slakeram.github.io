@@ -172,7 +172,7 @@ author_profile: false
     <article class="research-story-question" id="specialization">
       <span class="research-story-number">02</span>
       <div>
-        <h3>How did arthropods share plant resources in ancient food webs?</h3>
+        <h3>How did resource partitioning shape ancient food webs?</h3>
         <p>Different arthropods utilize different plant resources, influencing feeding specialization and the organization of food webs. Comparing fossil feeding associations with those of living arthropods helps reveal how resources were partitioned within ancient ecosystems.</p>
       </div>
     </article>
@@ -180,8 +180,8 @@ author_profile: false
     <article class="research-story-question" id="change">
       <span class="research-story-number">03</span>
       <div>
-        <h3>How do food webs respond to environmental change?</h3>
-        <p>EChanges in vegetation can alter the resources available to arthropods and their feeding relationships. Examining the Middle–Late Pennsylvanian Floral Transition and glaciation cycles alongside modern ecosystems helps investigate how food webs respond to shifts in plant communities and environmental conditions.</p>
+        <h3>How did environmental change restructure ancient food webs?</h3>
+        <p>Changes in vegetation can alter the resources available to arthropods and their feeding relationships. Examining the Middle–Late Pennsylvanian Floral Transition and glaciation cycles alongside modern ecosystems helps investigate how food webs respond to shifts in plant communities and environmental conditions.</p>
       </div>
     </article>
   </section>
@@ -190,7 +190,7 @@ author_profile: false
     <p class="research-story-eyebrow">CONNECTING PAST AND PRESENT</p>
     <h2 id="modern-ecology">Modern ecological comparisons</h2>
     <p>Modern ecosystems provide valuable comparisons for interpreting ecological processes preserved in the fossil record. My ongoing research in the Florida Keys examines insect herbivory on mangrove foliage across environmental gradients. Complementary work in South Florida wetlands investigates how plant litter, arthropod activity, and environmental conditions influence organic-matter accumulation and decomposition.</p>
-    <p>These comparisons help us better understand how feeding, decomposition, and resource use shaped ancient ecosystems and how these ecological relationships changed through time.</p>
+    <p>Together, these studies connect observations of living ecosystems with the ecological relationships preserved in ancient peat forests.</p>
     <div class="research-story-gallery">
       <figure><img src="{{ '/images/herbivory%20on%20red%20mangrove.jpg' | relative_url }}" alt="Insect herbivory on a red mangrove leaf" loading="lazy"/><figcaption>Galls and skeletonization of red mangrove foliage</figcaption></figure>
       <figure><img src="{{ '/images/mangrove%20tree.jpg' | relative_url }}" alt="Mangrove tree in a coastal ecosystem" loading="lazy"/><figcaption>Red mangrove (<em>Rhizophora mangle</em>) growing along a shallow coastal shoreline on Lower Matecumbe Key.</figcaption></figure>
