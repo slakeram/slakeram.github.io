@@ -131,7 +131,7 @@ author_profile: false
       <div class="research-story-copy">
         <h3>Coprolites: Evidence of ancient feeding</h3>
     <p>Coprolites are fossilized fecal material that preserve evidence of what ancient organisms consumed. Commonly found within coal balls, their shapes, distribution, and contents provide clues about feeding behavior that would otherwise be difficult to recognize in the fossil record.</p>
-    <p>These fossils are particularly valuable for studying small arthropods whose bodies are rarely preserved. To better understand their ecological roles, I have examined more than 6,000 coprolites and developed a systematic framework encompassing 26 morphotypes. This data set provides insight into patterns of herbivory, detritivory, and resource allocation in Pennsylvanian peat forests.</p>
+    <p>These fossils are particularly valuable for studying small arthropods whose bodies are rarely preserved in coal balls. To better understand their ecological roles, I have examined more than 6,000 coprolites and developed a systematic framework encompassing 26 morphotypes. This data set provides insight into patterns of herbivory, detritivory, and resource allocation in Pennsylvanian peat forests.</p>
       </div>
       <div class="research-story-gallery research-story-coprolite-gallery">
         <figure>
