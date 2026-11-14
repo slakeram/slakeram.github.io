@@ -7,15 +7,15 @@ author_profile: false
 
 <div class="kolam-page-marker kolam-cv" aria-hidden="true"></div>
 
-<h1 class="cv-person-name">Scott Lakeram, Ph.D.</h1>
+<h1 class="cv-person-name">Scott Lakeram</h1>
 
 ## Education
 
 - **Ph.D., Plant Biology** — University of Illinois Urbana–Champaign, 2025  
   [View dissertation](https://www.ideals.illinois.edu/items/139684)
 - **M.S., Geology** — Texas A&M University, 2020  
-  [View master's thesis](https://oaktrust.library.tamu.edu/items/e8ff2bb7-9c9d-4495-8529-d78bf5637d88)
-- **B.S., Geology** — Hofstra University, 2018
+  [View thesis](https://oaktrust.library.tamu.edu/items/e8ff2bb7-9c9d-4495-8529-d78bf5637d88)
+- **B.S., Geology, Minors: Biology and Music** — Hofstra University, 2018
 
 ## Appointments
 
