@@ -38,9 +38,9 @@ By studying fossil plants and feeding traces, including coprolites (fossilized f
 ## Research themes
 
 <div class="botanical-grid">
-  <a class="botanical-card" href="/research/#decomposition"><span>01 · DECOMPOSITION</span><h3>Plant–arthropod interactions and organic-matter processing</h3><p>How did arthropods shape decomposition in ancient peat-forming ecosystems?</p></a>
-  <a class="botanical-card" href="/research/#specialization"><span>02 · FOOD WEBS</span><h3>Trophic specialization and resource partitioning</h3><p>How did feeding guilds and resource use structure ancient food webs?</p></a>
-  <a class="botanical-card" href="/research/#change"><span>03 · ENVIRONMENTAL CHANGE</span><h3>Ecological restructuring across deep time</h3><p>How did disturbance and floral turnover reshape terrestrial food webs?</p></a>
+  <a class="botanical-card" href="/research/#decomposition"><span>01 · DECOMPOSITION</span><h3>Arthropods and organic-matter decomposition</h3><p>How do arthropods contribute to decomposition in forests?</p></a>
+  <a class="botanical-card" href="/research/#specialization"><span>02 · FOOD WEBS</span><h3>Resource partitioning and feeding specialization</h3><p>How does resource partitioning shape food webs?</p></a>
+  <a class="botanical-card" href="/research/#change"><span>03 · ENVIRONMENTAL CHANGE</span><h3>Food-web responses to environmental change</h3><p>How does environmental change restructure food webs?</p></a>
 </div>
 
 </section>
