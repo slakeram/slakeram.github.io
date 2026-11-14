@@ -30,7 +30,7 @@ author_profile: false
     </div>
     <div class="coal-book-gallery" data-coal-book-gallery aria-label="Phillips Coal Ball Collection image gallery">
       <div class="coal-book-heading">
-        <p class="research-story-eyebrow">ARCHIVAL PLATES</p>
+        <p class="research-story-eyebrow">
         <h4>Plant anatomy in Coal Ball</h4>
       </div>
       <figure class="coal-book-figure">
