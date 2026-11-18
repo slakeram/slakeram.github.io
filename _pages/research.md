@@ -9,16 +9,45 @@ author_profile: false
 
 <div class="botanical-intro">
   <p class="botanical-eyebrow">RESEARCH PROGRAM</p>
-  <h1>Reconstructing the ecological interactions of ancient forests</h1>
-  <p>Plant–arthropod interactions and the evolution of terrestrial ecosystems across deep time.</p>
+  <h1>Understanding the evolution of terrestrial ecosystems</h1>
+  <p>Plant–arthropod interactions across deep time.</p>
 </div>
 
 <div class="research-story">
 
   <section class="research-story-opening" aria-labelledby="research-intro">
     <h2 id="research-intro">Understanding ancient ecosystems</h2>
-    <p>Plants and arthropods have shaped terrestrial ecosystems for hundreds of millions of years. Through feeding and decomposition, their interactions influence how ecosystems function and respond to environmental change. Yet the early evolutionary history of these ecological relationships remains poorly understood. Trace fossils, which preserve evidence of an organism's activity rather than its physical remains, offer a way to investigate these ancient interactions.</p>
-    <p>Fossil feeding traces from Pennsylvanian coal balls provide evidence of how arthropods utilized plant resources. By examining these traces alongside modern ecological systems, my research investigates the ecological roles of arthropods, the structure of ancient food webs, and how patterns of resource use changed through time.</p>
+    <p>Plants and arthropods have shaped terrestrial ecosystems for hundreds of millions of years. Through feeding and decomposition, their interactions influence how ecosystems function and respond to environmental change. These interactions play an important role in the organization of food webs, the formation of soils, and the cycling of carbon. Yet the evolutionary history of these ecological relationships remains poorly understood. Trace fossils, which preserve evidence of an organism's activity rather than its physical remains, offer a way to investigate these ancient interactions.</p>
+    <p>By examining fossil feeding traces alongside modern ecological systems, my research investigates the ecological roles of arthropods, the evolution of terrestrial food webs, and how patterns of resource use have changed in response to plant evolution and environmental change.</p>
+  </section>
+
+  <section aria-labelledby="research-questions">
+    <p class="research-story-eyebrow">RESEARCH QUESTIONS</p>
+    <h2 id="research-questions">Three central research questions</h2>
+
+    <article class="research-story-question" id="decomposition">
+      <span class="research-story-number">01</span>
+      <div>
+        <h3>How do arthropods contribute to decomposition and soil formation?</h3>
+        <p>Decomposition plays an important role in nutrient cycling, soil formation, and organic-matter accumulation, yet the contributions of arthropods to these processes in ancient ecosystems remain poorly understood. Comparisons between ancient forests and modern wetlands help reveal how arthropod activity influences plant-litter breakdown, peat accumulation, and the cycling of carbon within terrestrial ecosystems.</p>
+      </div>
+    </article>
+
+    <article class="research-story-question" id="specialization">
+      <span class="research-story-number">02</span>
+      <div>
+        <h3>How have plant–arthropod interactions shaped food webs?</h3>
+        <p>Different arthropods utilize different plant resources, influencing feeding specialization and the organization of food webs. The evolution and diversification of plants introduced new resources and opportunities for arthropod feeding. Comparing fossil feeding associations with those of living arthropods helps reveal how resources are partitioned, how feeding relationships have evolved, and how changes in plant diversity influence the structure of terrestrial food webs.</p>
+      </div>
+    </article>
+
+    <article class="research-story-question" id="change">
+      <span class="research-story-number">03</span>
+      <div>
+        <h3>How do ecosystems respond to environmental change?</h3>
+        <p>Changes in climate and vegetation can alter the resources available to arthropods and their feeding relationships. Examining ecological changes associated with ancient climatic fluctuations, mass extinctions, and disturbances in modern ecosystems provides insight into how food webs respond to environmental change and how ecosystems recover following disturbances.</p>
+      </div>
+    </article>
   </section>
 
   <section aria-labelledby="fossil-evidence">
@@ -26,12 +55,11 @@ author_profile: false
     <div class="research-story-copy">
       <h3>Coal balls: Preserving ancient forests</h3>
       <p>Coal balls are mineralized masses found within coal seams, primarily from the Carboniferous and Permian periods. They formed when mineral-rich water infiltrated ancient peat deposits, causing minerals such as calcium carbonate to precipitate around buried plant tissues. This process preserved delicate plant structures before they were compacted during coal formation.</p>
-      <p>Coal balls preserve roots, stems, leaves, and other plant organs at cellular resolution. They can also preserve evidence of arthropod feeding activity within plant tissues. Unlike many other plant fossils, which primarily preserve external features, coal balls reveal internal anatomy in exceptional detail. This unique preservation provides insight into the vegetation of Pennsylvanian peat forests and the ecological interactions within these ancient ecosystems.</p>
+      <p>Coal balls preserve roots, stems, leaves, and other plant organs at cellular resolution. They can also preserve evidence of arthropod feeding activity within plant tissues. Unlike many other plant fossils, which primarily preserve external features, coal balls reveal internal anatomy in exceptional detail. This unique preservation provides insight into the vegetation of ancient peat forests and the ecological interactions within these ecosystems.</p>
     </div>
     <div class="coal-book-gallery" data-coal-book-gallery aria-label="Phillips Coal Ball Collection image gallery">
       <div class="coal-book-heading">
-        <p class="research-story-eyebrow">
-        <h4>Plant anatomy in Coal Ball</h4>
+        <h4>Plant anatomy in coal balls</h4>
       </div>
       <figure class="coal-book-figure">
         <div class="coal-book-stage">
@@ -131,18 +159,23 @@ author_profile: false
       <div class="research-story-copy">
         <h3>Coprolites: Evidence of ancient feeding</h3>
     <p>Coprolites are fossilized fecal material that preserve evidence of what ancient organisms consumed. Commonly found within coal balls, their shapes, distribution, and contents provide clues about feeding behavior that would otherwise be difficult to recognize in the fossil record.</p>
-    <p>These fossils are particularly valuable for studying small arthropods whose bodies are rarely preserved in coal balls. To better understand their ecological roles, I have examined more than 6,000 coprolites and developed a systematic framework encompassing 26 morphotypes. This data set provides insight into patterns of herbivory, detritivory, and resource allocation in Pennsylvanian peat forests.</p>
+    <p>These fossils are particularly valuable for studying small arthropods whose bodies are rarely preserved in coal balls. To better understand their ecological roles, I have examined more than 8,000 coprolites and developed a systematic framework encompassing 26 morphotypes, or recognizable forms. This dataset provides insight into patterns of herbivory (feeding on living plants), detritivory (feeding on decaying organic matter), and resource use in ancient peat forests.</p>
       </div>
       <div class="research-story-gallery research-story-coprolite-gallery">
         <figure>
           <img src="{{ '/images/cordaite%20wood%20copro%20mite.png' | relative_url }}" alt="Fossil coprolite and associated mite in cordaite wood" loading="lazy"/>
-          <figcaption>Coprolites attributed to oribatid mites (pink arrows) preserved within borings in *Cordaites* wood.</figcaption>
+          <figcaption>Coprolites attributed to oribatid mites (pink arrows) preserved within borings in <em>Cordaites</em> wood.</figcaption>
         </figure>
         <figure>
           <img src="{{ '/images/Convolutispora%20matrix%20coprolite.png' | relative_url }}" alt="A coprolite indicated by a pink arrow containing spores from Psaronius tree ferns, Convolutispora, occurring in the peat matrix" loading="lazy"/>
-          <figcaption>A coprolite (pink arrow) containing *Convolutispora* spores, attributed to *Psaronius* tree ferns, preserved within the peat matrix.</figcaption>
+          <figcaption>A coprolite (pink arrow) containing <em>Convolutispora</em> spores, attributed to <em>Psaronius</em> tree ferns, preserved within the peat matrix.</figcaption>
         </figure>
       </div>
+    </div>
+    <div class="research-story-copy">
+      <h3>Fossil leaves: Traces of ancient interactions</h3>
+      <p>Fossil leaves can preserve evidence of arthropod feeding activity, including holes, tunnels within leaves, and abnormal plant growths known as galls. These feeding traces provide insight into the diversity of plant–arthropod interactions across geological time.</p>
+      <p>Comparisons of feeding damage preserved on fossil leaves from different environments and geological periods help reveal how feeding relationships evolved alongside the diversification of plants and changes in terrestrial vegetation.</p>
     </div>
   </section>
 
@@ -150,47 +183,18 @@ author_profile: false
     <p class="research-story-eyebrow">FROM FOSSILS TO ECOLOGY</p>
     <h2 id="network-explainer">Reconstructing ancient food webs</h2>
     <p>Coprolites and other trace fossils provide evidence of feeding relationships between arthropods and plants in ancient ecosystems. Identifying plant tissues within different coprolite morphotypes helps determine which resources were consumed and reveals patterns of resource use.</p>
-    <p>Bipartite networks illustrate relationships between two distinct groups. In my research, these networks connect coprolite morphotypes with the plant resources identified within them. By examining these associations, I investigate patterns of feeding specialization, resource partitioning, and the structure of ancient food webs. Comparisons between fossil coprolites and fecal pellets produced by modern arthropods also help infer the identities of potential producers.</p>
+    <p>Bipartite networks illustrate relationships between two distinct groups. In my research, these networks connect fossil feeding traces with the plant resources associated with them. These associations provide insight into patterns of feeding specialization, resource partitioning, and the structure of ancient food webs. Comparisons between fossil coprolites and fecal pellets produced by modern arthropods also help infer the identities of potential producers.</p>
     <figure class="research-story-network">
       <img src="{{ '/images/coprolite_network_diagram.svg' | relative_url }}" alt="Simplified schematic connecting potential arthropod producers to coprolite morphotypes or damage types and plant resources" loading="lazy"/>
       <figcaption>A simplified illustration of how fossil feeding evidence can inform food-web reconstruction.</figcaption>
     </figure>
   </section>
 
-  <section aria-labelledby="research-questions">
-    <p class="research-story-eyebrow">RESEARCH QUESTIONS</p>
-    <h2 id="research-questions">Three central research questions</h2>
-
-    <article class="research-story-question" id="decomposition">
-      <span class="research-story-number">01</span>
-      <div>
-        <h3>How do arthropods contribute to decomposition in forests?</h3>
-        <p>Decomposition plays an important role in nutrient cycling and organic-matter accumulation, yet the contributions of arthropods in ancient peat-forming ecosystems remain poorly understood. Comparisons with modern wetlands help reveal how arthropod activity influences plant-litter breakdown and peat accumulation.</p>
-      </div>
-    </article>
-
-    <article class="research-story-question" id="specialization">
-      <span class="research-story-number">02</span>
-      <div>
-        <h3>How does resource partitioning shape food webs?</h3>
-        <p>Different arthropods utilize different plant resources, influencing feeding specialization and the organization of food webs. Comparing fossil feeding associations with those of living arthropods helps reveal how resources were partitioned within ancient ecosystems.</p>
-      </div>
-    </article>
-
-    <article class="research-story-question" id="change">
-      <span class="research-story-number">03</span>
-      <div>
-        <h3>How does environmental change restructure food webs?</h3>
-        <p>Changes in vegetation can alter the resources available to arthropods and their feeding relationships. Examining the Middle–Late Pennsylvanian Floral Transition and glaciation cycles alongside modern ecosystems helps investigate how food webs respond to shifts in plant communities and environmental conditions.</p>
-      </div>
-    </article>
-  </section>
-
   <section aria-labelledby="modern-ecology">
     <p class="research-story-eyebrow">CONNECTING PAST AND PRESENT</p>
     <h2 id="modern-ecology">Modern ecological comparisons</h2>
-    <p>Modern ecosystems provide valuable comparisons for interpreting ecological processes preserved in the fossil record. My ongoing research in the Florida Keys examines insect herbivory on mangrove foliage across environmental gradients. Complementary work in South Florida wetlands investigates how plant litter, arthropod activity, and environmental conditions influence organic-matter accumulation and decomposition. Together, these projects connect observations of living ecosystems with the ecological relationships preserved in ancient peat forests.
-</p>
+    <p>Modern ecosystems provide valuable comparisons for interpreting ecological processes preserved in the fossil record. My ongoing research in the Florida Keys examines insect herbivory on mangrove foliage across environmental gradients. Complementary work in South Florida wetlands investigates how plant litter, arthropod activity, and environmental conditions influence organic-matter accumulation and decomposition. </p>
+    <p>Together, these studies connect observations of living ecosystems with ecological relationships preserved in the fossil record, providing insight into the functioning, evolution, and resilience of terrestrial ecosystems.</p>
     <div class="research-story-gallery">
       <figure><img src="{{ '/images/herbivory%20on%20red%20mangrove.jpg' | relative_url }}" alt="Insect herbivory on a red mangrove leaf" loading="lazy"/><figcaption>Galls and skeletonization of red mangrove foliage</figcaption></figure>
       <figure><img src="{{ '/images/mangrove%20tree.jpg' | relative_url }}" alt="Mangrove tree in a coastal ecosystem" loading="lazy"/><figcaption>Red mangrove (<em>Rhizophora mangle</em>) growing along a shallow coastal shoreline on Lower Matecumbe Key.</figcaption></figure>
